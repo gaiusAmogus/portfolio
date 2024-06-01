@@ -3,3 +3,27 @@
 
 //     }
 // }
+
+.corners{
+    position: relative;
+    &::before,
+    &::after{
+        content: '';
+        width: 63px;
+        height: 63px;
+        position: absolute;
+        
+    }
+    &::before{
+        border-top: 2px solid $red;
+        border-left: 2px solid $red;
+        top: -7px;
+        left: -7px;
+    }
+    &::after{
+        border-bottom: 2px solid $red;
+        border-right: 2px solid $red;
+        bottom: -7px;
+        right: -7px;
+    }
+}

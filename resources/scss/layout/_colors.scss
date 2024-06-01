@@ -1,0 +1,26 @@
+$red: #730505;
+$white: #E9E9E9;
+$black: #130303;
+
+.color{
+    &--red{
+        color: $red;
+    }
+    &--white{
+        color: $white;
+    }
+    &--black{
+        color: $black;
+    }
+}
+.background{
+    &--red{
+        background-color: $red;
+    }
+    &--white{
+        background-color: $white;
+    }
+    &--black{
+        background-color: $black;
+    }
+}

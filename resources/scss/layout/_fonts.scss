@@ -1,55 +1,84 @@
-// p{
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
 
-// }
-// span{
-
-// }
-// a{
-
-// }
-// h1,h2,h3,h4,h5{
-
-// }
-// h1{
-
-// }
-// h2{
-
-// }
-// h3{
-
-// }
-// h4{
-
-// }
-// h5{
-
-// }
-// .text {
-//     &--1{
-
-//     }
-//     &--2{
-
-//     }
-//     &--3{
-
-//     }
-// }
-// .title{
-//     &--1{
-
-//     }
-//     &--2{
-
-//     }
-//     &--3{
-
-//     }
-//     &--4{
-
-//     }
-//     &--5{
-
-//     }
-// }
+p{
+    margin: 0;
+}
+span{
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    transition-duration: .2s;
+    &:hover {
+        text-decoration: none;
+        transition-duration: .2s;
+    }
+}
+h1,h2,h3,h4,h5{
+    font-family: Oxanium;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+h1{
+    font-size: 64px;
+}
+h2{
+    font-size: 30px;
+    letter-spacing: 0.9px;
+}
+h3, h4, h5{
+    font-size: 32px;
+    line-height: normal;
+}
+.text {
+    font-family: Oxanium;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    &--1{
+        font-size: 22px;
+    }
+    &--2{
+        font-size: 18px;
+    }
+    &--3{
+        font-size: 15px;
+    }
+}
+.title{
+    font-family: Oxanium;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    &--1{
+        font-size: 64px;
+    }
+    &--2{
+        font-size: 30px;
+        letter-spacing: 0.9px;
+    }
+    &--3{
+        font-size: 32px;
+        line-height: normal;
+    }
+    &--4{
+        font-size: 32px;
+        line-height: normal;
+    }
+    &--5{
+        font-size: 32px;
+        line-height: normal;
+    }
+}
+.textShadow{
+    &--white{
+        color: #E9E9E9;
+        text-shadow: 0px 0px 20px rgba(233, 233, 233, 0.77);
+    }
+    &--red{
+        color: #730505;
+        text-shadow: 0px 0px 20px rgba(141, 8, 8, 0.77);
+    }
+}

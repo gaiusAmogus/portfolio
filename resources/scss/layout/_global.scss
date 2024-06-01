@@ -11,20 +11,17 @@
 
 html,
 body {
-    overflow-x: hidden;
+    overflow: hidden;
     padding: 0;
     margin: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    position: relative;
 }
 img {
     max-width: 100%;
-}
-a {
-    text-decoration: none;
-    transition-duration: 0.2s;
-    &:hover {
-        text-decoration: none;
-        transition-duration: 0.2s;
-    }
 }
 :focus {
     outline: 0 !important;

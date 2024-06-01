@@ -1,0 +1,117 @@
+body{
+    background: linear-gradient(0deg, #220A0A 0%, #220808 42.11%, #120505 100%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $white;
+    font-family: Oxanium;
+    border: 3px solid rgba(115, 5, 5, 0.5);
+}
+.header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 175px;
+    opacity: 0;
+    &--show{
+        animation: headerFooterShow .5s 2.5s forwards;
+    }
+    &__row{
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 15px 0;
+        &__el{
+            display: flex;
+            flex-direction: column;
+            p{
+                color: #730505;
+                font-family: Oxanium;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: uppercase;
+                opacity: 0.7;
+            }
+        }
+    }
+}
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 175px;
+    opacity: 0;
+    &--show{
+        animation: headerFooterShow .7s 2.5s forwards;
+    }
+    &__row{
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 15px 0;
+        &__el{
+            display: flex;
+            flex-direction: column;
+            p{
+                color: #730505;
+                font-family: Oxanium;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: uppercase;
+                opacity: 0.7;
+            }
+            &--2{
+                flex-direction: row;
+                align-items: center;
+                gap: 15px;
+                p{
+                    max-width: 300px;
+                }
+                a{
+                    svg{
+                        transition: .2s ease-in-out;
+                        opacity: 0.7;
+                        width: 32px;
+                        height: auto;
+                    }
+                    &:hover{
+                        svg{
+                            opacity: 1;
+                            filter: drop-shadow(0px 0px 10px #730505);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes headerFooterShow{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.siteLine{
+    position: absolute;
+    top: 0;
+    svg{
+        height: 100vh;
+        width: auto;
+    }
+    &--1{
+        left: 50px;
+    }
+    &--2{
+        right: 50px;
+    }
+}
