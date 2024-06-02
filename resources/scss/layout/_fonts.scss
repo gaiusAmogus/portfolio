@@ -9,9 +9,15 @@ span{
 a {
     text-decoration: none;
     transition-duration: .2s;
+    color: $white;
     &:hover {
         text-decoration: none;
         transition-duration: .2s;
+    }
+}
+.link{
+    &:hover{
+        opacity: .7;
     }
 }
 h1,h2,h3,h4,h5{
