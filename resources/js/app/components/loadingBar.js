@@ -1,4 +1,5 @@
 import { getSvg } from '../functions/getSvg.js';
+import { dataModulesRun } from '../components/dataModules.js';
 
 export function loadingBar(){
     var siteLines = 
@@ -34,6 +35,9 @@ export function loadingBar(){
             $('.loadingBar').addClass('loadingBar--anim');
             $('.header').addClass('header--show');
             $('.footer').addClass('footer--show');
+            setTimeout(() => {
+                dataModulesRun();
+            }, 3000);
         }
     }, 15);
 }

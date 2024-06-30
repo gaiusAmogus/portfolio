@@ -47,7 +47,7 @@ body{
     padding: 0 175px;
     opacity: 0;
     &--show{
-        animation: headerFooterShow .7s 2.5s forwards;
+        animation: headerFooterShow .5s 2.5s forwards;
     }
     &__row{
         max-width: 100%;

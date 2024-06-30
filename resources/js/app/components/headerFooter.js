@@ -1,5 +1,4 @@
 import { getSvg } from '../functions/getSvg.js';
-import { runAfterContentLoad } from '../functions/runAfterContentLoad.js';
 
 export function headerFooter() {
     var app = $('#app');
@@ -43,17 +42,14 @@ export function headerFooter() {
     $(footer).appendTo(app);
 
     var headerFooterSpace = $('.header').innerHeight() + $('.footer').innerHeight() + 120;
-    var test = 
-    `
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    `;
+    
     var contentContainer = 
     `
         <section class="contentContainer" style="max-height: calc(100vh - ${headerFooterSpace}px)">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div id="content" class="scrollbar">${test}</div>
+                        <div id="content" class="scrollbar"></div>
                     </div>
                 </div>
             </div>
@@ -62,7 +58,6 @@ export function headerFooter() {
     $(contentContainer).appendTo(app);
 
     updateUserInfo();
-    runAfterContentLoad();
 }
 
 async function updateUserInfo() {
@@ -73,6 +68,7 @@ async function updateUserInfo() {
 
     // Adres IP i lokalizacja
     let ipAndLocation = await getIPAndLocation();
+
     if (ipAndLocation) {
         $('#userIP span').text(ipAndLocation.ip || 'NO DATA');
         $('#userLocation span').text((ipAndLocation.city || 'NO DATA') + ', ' + (ipAndLocation.country || 'NO DATA'));
@@ -159,12 +155,20 @@ function getBrowserInfo() {
 
 async function getIPAndLocation() {
     try {
-        let response = await fetch('https://ipapi.co/json'); // `ipapi.co` nie wymaga tokena do podstawowych zapytań
-        let data = await response.json();
+        // Fetch the IP address
+        let ipResponse = await fetch('https://api.ipify.org?format=json');
+        if (!ipResponse.ok) throw new Error('Failed to fetch IP');
+        let ipData = await ipResponse.json();
+        
+        // Fetch the location data based on the IP address
+        let locationResponse = await fetch(`http://ip-api.com/json/${ipData.ip}`);
+        if (!locationResponse.ok) throw new Error('Failed to fetch location');
+        let locationData = await locationResponse.json();
+        
         return {
-            ip: data.ip,
-            city: data.city,
-            country: data.country_name
+            ip: ipData.ip,
+            city: locationData.city,
+            country: locationData.country
         };
     } catch (error) {
         console.error('Error fetching IP and location:', error);
