@@ -1,6 +1,6 @@
-import { getSvg } from '../functions/getSvg.js';
+import { getSvg } from '../../functions/getSvg.js';
 
-export function headerFooter() {
+export function headerFooter() { 
     var app = $('#app');
     
     var header = 
@@ -26,12 +26,11 @@ export function headerFooter() {
         <footer class="footer">
             <div class="footer__row">
                 <div class="footer__row__el footer__row__el--1">
-                    <p>SYSTEM CREATED BY DAWID JEDYNAK</p>
-                    <p>AS A PORTFOLIO</p>
-                    <p>CHECK <a href="/" class="color--red link">github.com/gaiusAmogus</a></p>
+                    <p><span>SYSTEM CREATED BY DAWID JEDYNAK</span></p>
+                    <p><span>AS A PORTFOLIO</span></p>
                 </div>
                 <div class="footer__row__el footer__row__el--2">
-                    <p>If you want to offer me cooperation write to <a href="mailto:piratecodehq@gmail.com" class="color--red link">piratecodehq@gmail.com</a></p>
+                    <p><span>If you want to offer me cooperation write to </span><a href="mailto:piratecodehq@gmail.com" class="link link--red">piratecodehq@gmail.com</a></p>
                     <a href="/">${getSvg('linkedin')}</a>
                     <a href="/">${getSvg('github')}</a>
                 </div>
@@ -189,3 +188,4 @@ async function updateBatteryStatus() {
         $('#userBat span').text('NO DATA');
     }
 }
+

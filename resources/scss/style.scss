@@ -5,6 +5,8 @@
 @import "layout/fonts";
 @import "layout/btns";
 
-@import "template-components/background";
-@import "template-components/loadingBar";
-@import "template-components/s_dataModules";
+@import "components/common/background";
+@import "components/common/loadingBar";
+@import "components/common/headerFooter";
+
+@import "components/pageStart/dataModules"; 

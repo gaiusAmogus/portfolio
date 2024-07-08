@@ -9,16 +9,6 @@ const svgs = {
         <path d="M2 0L2 85L49 135C49 451.324 49 628.675 49 945L2.5 995V1080" stroke="#730505" stroke-opacity="0.5" stroke-width="3"/>
     </svg>`,
 
-    loadingBar_1:
-    `<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="15" viewBox="0 0 1600 15" fill="none">
-        <path d="M13.7143 0H1586.29L1600 15H0L13.7143 0Z" fill="#730505" fill-opacity="0.5"/>
-    </svg>`,
-
-    loadingBar_2:
-    `<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="15" viewBox="0 0 1600 15" fill="none">
-        <path d="M1586.29 15L13.7142 15L0 0L1600 0L1586.29 15Z" fill="#730505" fill-opacity="0.5"/>
-    </svg>`,
-
     linkedin: 
     `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
         <path d="M9.38042 9.00655H7.13519C6.92863 9.00655 6.76099 9.17418 6.76099 9.38073V17.6127C6.76099 17.8193 6.92863 17.9869 7.13519 17.9869H9.38042C9.58698 17.9869 9.75462 17.8193 9.75462 17.6127V9.38073C9.75462 9.17418 9.58698 9.00655 9.38042 9.00655ZM9.00622 17.2385H7.5094V9.75491H9.00622V17.2385Z" fill="#730505"/>

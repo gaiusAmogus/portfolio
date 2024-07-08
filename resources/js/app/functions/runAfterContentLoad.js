@@ -1,4 +1,3 @@
-
 export function runAfterContentLoad(){
     setTimeout(function() {
 

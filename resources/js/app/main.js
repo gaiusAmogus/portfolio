@@ -1,5 +1,5 @@
-import { pageStart } from './controllers/pageStart.js';
+import { run } from './controllers/run.js';
 
 $(document).ready(function(){
-    pageStart();
+    run();
 }); 

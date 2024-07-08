@@ -1,5 +1,6 @@
-import { getSvg } from '../functions/getSvg.js';
-import { dataModulesRun } from '../components/dataModules.js';
+import { getSvg } from '../../functions/getSvg.js';
+import { acronymEl } from '../../functions/acronymEl.js';
+import { dataModulesRun } from '../../components/pageStart/dataModules.js';
 
 export function loadingBar(){
     var siteLines = 
@@ -15,12 +16,18 @@ export function loadingBar(){
             </div>
             <div class="loadingBar__percent"></div>
             <div class="loadingBar__load"></div>
-            <div class="loadingBar__line loadingBar__line--1">${getSvg('loadingBar_1')}</div>
-            <div class="loadingBar__line loadingBar__line--2">${getSvg('loadingBar_2')}</div>
+            <div class="loadingBar__line loadingBar__line--1">
+                <div class="loadingBar__line__el"></div>
+            </div>
+            <div class="loadingBar__line loadingBar__line--2">
+                <div class="loadingBar__line__el"></div>
+            </div>
         </div>
     `
     $(bar).appendTo(app);
     $(siteLines).appendTo(app);
+    acronymEl('siteLineAcr__1', '.siteLine--1', 40);
+    acronymEl('siteLineAcr__2', '.siteLine--2', 5);
 
     var percent = 0;
     var width = 0;
@@ -40,4 +47,5 @@ export function loadingBar(){
             }, 3000);
         }
     }, 15);
+
 }
