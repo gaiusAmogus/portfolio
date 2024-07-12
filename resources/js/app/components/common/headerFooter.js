@@ -48,7 +48,7 @@ export function headerFooter() {
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div id="content" class="scrollbar"></div>
+                        <div id="content"></div>
                     </div>
                 </div>
             </div>

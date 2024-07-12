@@ -25,6 +25,9 @@
         font-weight: 400;
         line-height: normal;
         z-index: 2;
+        @media screen and (max-width: 575px){
+            font-size: 18px;
+        }
     }
     &__load{
         width: 0;
@@ -96,6 +99,12 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            @media screen and (max-width: 575px){
+                font-size: 33px;
+            }
+            @media screen and (min-width: 576px) and (max-width: 991px){
+                font-size: 40px;
+            }
         }
     }
     &--anim{

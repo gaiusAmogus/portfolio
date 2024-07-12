@@ -1,8 +1,12 @@
+import { clearContent } from '../../functions/clearContent.js';
 import { getSvg } from '../../functions/getSvg.js';
 import { customScrollbar } from '../../functions/customScrollbar.js';
 import { TextScramble, textType } from '../../functions/textScramble.js';
 import { animFrom } from '../../functions/animTransform.js';
 import { acronymEl } from '../../functions/acronymEl.js';
+
+import { runArchive } from '../../components/pageArchive/archiveData.js';
+import { runAbout } from '../../components/pageabout/about.js';
 
 
 function dataModulesContent() {
@@ -11,7 +15,7 @@ function dataModulesContent() {
             <h2 class="title title--1 textShadow--white">${textType('Available data modules')}</h2>
             <div class="modules">
                 <div class="dataModule dataModule--0 col-12 col-xl-4">
-                    <div class="dataModule__inner corners">
+                    <div class="dataModule__inner corners corners--hover">
                         <div class="dataModule__inner__bg">
                             <div class="dataModule__inner__bg__cut"></div>
                         </div>
@@ -23,7 +27,7 @@ function dataModulesContent() {
                     </div>
                 </div>
                 <div class="dataModule dataModule--1 col-12 col-xl-4">
-                    <div class="dataModule__inner corners">
+                    <div class="dataModule__inner corners corners--hover">
                         <div class="dataModule__inner__bg">
                             <div class="dataModule__inner__bg__cut"></div>
                         </div>
@@ -52,31 +56,62 @@ function dataModulesContent() {
     return content;
 }
 
+function dataModulesBtns(){
+    var module_0 = document.querySelector('.dataModule--0');
+    var module_1 = document.querySelector('.dataModule--1');
+
+    module_0.addEventListener('click', function() {
+        runArchive();
+    });
+
+    module_1.addEventListener('click', function() {
+        runAbout();
+    });
+
+}
+
 export function dataModulesRun() {
-    const contentContainer = $('#content');
-    contentContainer.empty();
-    const content = $(dataModulesContent());
-    content.appendTo(contentContainer);
-
-    // Run the text scramble animation after appending to the DOM
-    const titleElement = document.querySelector('.dataModules .title--1');
-    if (titleElement) {
-        const fx = new TextScramble(titleElement);
-        fx.setText('Available data modules');
-    }
-    animFrom('.dataModule--0 .dataModule__inner', 'down');
-    animFrom('.dataModule--1 .dataModule__inner', 'down');
-    animFrom('.dataModule--2 .dataModule__inner', 'down');
-
-    var gl1 = Object.create(glitch_exec);
-    gl1.start(document.getElementById("glitchModule"));
-
-    acronymEl('dataModule__acr', '#glitchModule', 18);    
-
-    // Optional: Initialize custom scrollbars
-    if (window.innerWidth < 1200){
+    clearContent();
+    setTimeout(() => {
+        const contentContainer = $('#content');
+        const content = $(dataModulesContent());
+        content.appendTo(contentContainer);
+    
+        // Run the text scramble animation after appending to the DOM
+        const titleElement = document.querySelector('.dataModules .title--1');
+        if (titleElement) {
+            const fx = new TextScramble(titleElement);
+            fx.setText('Available data modules');
+        }
+        animFrom('.dataModule--0 .dataModule__inner', 'down');
+        animFrom('.dataModule--1 .dataModule__inner', 'down');
+        animFrom('.dataModule--2 .dataModule__inner', 'down');
+    
+        startGlitchModule();
+    
+        acronymEl('dataModule__acr', '#glitchModule', 18);    
+    
+        // Optional: Initialize custom scrollbars
         setTimeout(function() {
-            customScrollbar();
+            // if (window.innerWidth < 1200){
+            //     customScrollbar();
+            // }
+            dataModulesBtns();
         }, 100);
+
+    }, 350);
+}
+
+
+var gl1;
+
+function startGlitchModule() {
+    gl1 = Object.create(glitch_exec);
+    gl1.start(document.getElementById("glitchModule"));
+}
+
+export function stopGlitchModule() {
+    if (gl1) {
+        gl1.stop();
     }
 }

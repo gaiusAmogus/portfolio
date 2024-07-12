@@ -4,10 +4,10 @@ function getRandomInt (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-glitch_exec = {
+var glitch_exec = {
     /* Global config settings */
     NR_OF_GLITCHED_CANVASES : 7,
-    GLITCH_RENDER_COUNT     : 0, /* 0 or negative == glitch indefinitely ; > 0 == glich & few times and stop */
+    GLITCH_RENDER_COUNT     : 0, /* 0 or negative == glitch indefinitely ; > 0 == glitch few times and stop */
     GLITCH_INTERVAL_PROGRESSIVE : 1,
     GLITCH_INTERVAL_MIN     : 500, /* millisecs */
     GLITCH_INTERVAL_MAX     : 1500, /* millisecs */
@@ -20,8 +20,9 @@ glitch_exec = {
     refresh_glitch_frames_counter : 0,
     rendered_canvases : 0,
     times_rendered    : 0,
-    glitched_canvases : Array(),
+    glitched_canvases : [],
     curr_canvas       : null,
+    is_animating      : false, // Flag to track animation state
 
     __state_machine: function(gl) {
         var otg = gl.object_to_glitch;
@@ -31,6 +32,10 @@ glitch_exec = {
             if (typeof gl.done_callback == "function")
                 gl.done_callback();
             return;
+        }
+
+        if (!gl.is_animating) {
+            return;  // Stop animation if not animating
         }
 
         if (gl.curr_canvas != null) {
@@ -62,7 +67,7 @@ glitch_exec = {
 
     glitch_frames : function() {
         var gl = this;
-        gl.glitched_canvases = Array();
+        gl.glitched_canvases = [];
         for(var i = 0; i < gl.NR_OF_GLITCHED_CANVASES; ++i) {
             glitch(gl.object_to_glitch, {
                 amount: i,
@@ -80,8 +85,14 @@ glitch_exec = {
     start: function(obj_to_glitch) {
         var gl = this;
         gl.object_to_glitch = obj_to_glitch;
+        gl.is_animating = true;  // Set animation state to true
         gl.glitch_frames();
         gl.__state_machine(gl);
+    },
+
+    stop: function() {
+        var gl = this;
+        gl.is_animating = false;  // Set animation state to false to stop animation
     }
 
 };

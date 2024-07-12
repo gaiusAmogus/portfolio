@@ -1,8 +1,32 @@
-// .btn{
-//     &--primary{
+.btn{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px 10px;
 
-//     }
-// }
+    &--primary{
+        background: rgba(129, 35, 35, 0.21);
+        border: 2px solid $red;
+        color: $white;
+
+        text-align: center;
+        text-shadow: 0px 0px 20px rgba(141, 8, 8, 0.77);
+        font-family: Oxanium;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        transition: .2s ease-in-out;
+        &:hover{
+            background: #130303;
+            color: $red;
+            text-shadow: 0px 0px 15px rgba(141, 8, 8, 0.77);
+
+        }
+    }
+}
 
 .corners{
     position: relative;
@@ -13,6 +37,7 @@
         height: 63px;
         position: absolute;
         transition: .2s ease-in-out;
+        pointer-events: none;
         
     }
     &::before{
@@ -27,11 +52,13 @@
         bottom: -7px;
         right: -7px;
     }
-    &:hover{
-        &::before,
-        &::after{
-            width: 85%;
-            height: 85%;
+    &--hover{
+        &:hover{
+            &::before,
+            &::after{
+                width: 85%;
+                height: 85%;
+            }
         }
     }
 }
