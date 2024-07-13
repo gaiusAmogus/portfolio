@@ -1,4 +1,6 @@
 import { getSvg } from '../../functions/getSvg.js';
+import { handleBackButtons } from '../../functions/backButtons.js';
+
 
 export function headerFooter() { 
     var app = $('#app');
@@ -26,8 +28,14 @@ export function headerFooter() {
         <footer class="footer">
             <div class="footer__row">
                 <div class="footer__row__el footer__row__el--1">
-                    <p><span>SYSTEM CREATED BY DAWID JEDYNAK</span></p>
-                    <p><span>AS A PORTFOLIO</span></p>
+                    <div class="footer__row__el__content">
+                        <p><span>SYSTEM CREATED BY DAWID JEDYNAK</span></p>
+                        <p><span>AS A PORTFOLIO</span></p>
+                    </div>
+                    <div class="footer__row__el__btns">
+                        <div class="btn btn--primary btnBack__modules">Back to modules</div>
+                        <div class="btn btn--primary btnBack__projects">Back to projects</div>
+                    </div>
                 </div>
                 <div class="footer__row__el footer__row__el--2">
                     <p><span>If you want to offer me cooperation write to </span><a href="mailto:piratecodehq@gmail.com" class="link link--red">piratecodehq@gmail.com</a></p>
@@ -40,7 +48,7 @@ export function headerFooter() {
     $(header).appendTo(app);
     $(footer).appendTo(app);
 
-    var headerFooterSpace = $('.header').innerHeight() + $('.footer').innerHeight() + 120;
+    var headerFooterSpace = $('.header').innerHeight() + $('.footer').innerHeight() + 80;
     
     var contentContainer = 
     `
@@ -57,6 +65,7 @@ export function headerFooter() {
     $(contentContainer).appendTo(app);
 
     updateUserInfo();
+    handleBackButtons();
 }
 
 async function updateUserInfo() {

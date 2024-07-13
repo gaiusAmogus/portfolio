@@ -3,6 +3,8 @@ import { getSvg } from '../../functions/getSvg.js';
 import { customScrollbar } from '../../functions/customScrollbar.js';
 import { TextScramble, textType } from '../../functions/textScramble.js';
 import { animFrom } from '../../functions/animTransform.js';
+import { showBackButton, closeBackButton } from '../../functions/backButtons.js';
+
 import { runProjectData } from '../../components/pageArchiveSingle/projectData.js';
 
 
@@ -21,16 +23,12 @@ async function archiveContentList() {
             </div>
         `;
     });
-    
-
-    var archiveScreenHeight = document.querySelector('.contentContainer').clientHeight 
-    - 80 - 36 - 5;
 
     // Generowanie całej zawartości HTML
     const content = `
         <section class="archiveData">
             <h2 class="title title--1 textShadow--white">${textType('Project data of the object')}</h2>
-            <div class="archiveScreen" style="height: ${archiveScreenHeight}px">
+            <div class="archiveScreen">
                 <div class="archiveScreen__inner corners">
                     <div class="archiveScreen__inner__el archiveScreen__inner__el--0 projectsList col-12 col-xl-3 offset-xl-1">
                         <div class="projectsList__inner scrollbar">
@@ -96,6 +94,9 @@ async function archiveContentSelected() {
 
 function archiveContentBtns(){
 
+    closeBackButton('.btnBack__projects');
+    showBackButton('.btnBack__modules');
+
     const projectItems = document.querySelectorAll('.projectsList__inner__list__el');
 
     projectItems.forEach(item => {
@@ -136,12 +137,18 @@ export async function runArchive() {
         archiveContentList().then(list => {
             contentContainer.innerHTML = list;
 
+            var archiveTitleElement = document.querySelector('.archiveData .title--1');
+            var archiveTitleHeight = archiveTitleElement.clientHeight + parseFloat(getComputedStyle(archiveTitleElement).marginBottom);
+            var archiveScreenHeight = document.querySelector('.contentContainer').clientHeight - archiveTitleHeight - 5;
+            document.querySelector('.archiveData .archiveScreen__inner').style.height = archiveScreenHeight + 'px';
+
             // Run the text scramble animation after appending to the DOM
             const titleElement = document.querySelector('.archiveData .title--1');
             if (titleElement) {
                 const fx = new TextScramble(titleElement);
                 fx.setText('Project data of the object');
             }
+            animFrom('.archiveData .title--1', 'right');
             animFrom('.archiveScreen', 'down');
 
             // Optional: Initialize custom scrollbars

@@ -4,9 +4,11 @@ import { customScrollbar } from '../../functions/customScrollbar.js';
 import { TextScramble, textType } from '../../functions/textScramble.js';
 import { animFrom } from '../../functions/animTransform.js';
 import { acronymEl } from '../../functions/acronymEl.js';
+import { closeBackButton } from '../../functions/backButtons.js';
 
 import { runArchive } from '../../components/pageArchive/archiveData.js';
 import { runAbout } from '../../components/pageabout/about.js';
+
 
 
 function dataModulesContent() {
@@ -57,6 +59,10 @@ function dataModulesContent() {
 }
 
 function dataModulesBtns(){
+
+    closeBackButton('.btnBack__projects');
+    closeBackButton('.btnBack__modules');
+
     var module_0 = document.querySelector('.dataModule--0');
     var module_1 = document.querySelector('.dataModule--1');
 
@@ -83,6 +89,8 @@ export function dataModulesRun() {
             const fx = new TextScramble(titleElement);
             fx.setText('Available data modules');
         }
+
+        animFrom('.dataModules .title--1', 'right');
         animFrom('.dataModule--0 .dataModule__inner', 'down');
         animFrom('.dataModule--1 .dataModule__inner', 'down');
         animFrom('.dataModule--2 .dataModule__inner', 'down');
@@ -93,15 +101,14 @@ export function dataModulesRun() {
     
         // Optional: Initialize custom scrollbars
         setTimeout(function() {
-            // if (window.innerWidth < 1200){
-            //     customScrollbar();
-            // }
+            if (window.innerWidth < 1200){
+                customScrollbar('.contentContainer');
+            }
             dataModulesBtns();
         }, 100);
 
     }, 350);
 }
-
 
 var gl1;
 

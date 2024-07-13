@@ -75,6 +75,74 @@
         &__el{
             display: flex;
             flex-direction: column;
+            &--1{
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                p{
+                    @media screen and (max-width: 575px){
+                        display: none;
+                    }
+                }
+            }
+            &--2{
+                flex-direction: row;
+                align-items: center;
+                gap: 15px;
+                p{
+                    max-width: 200px;
+                    text-align: right;
+                    @media screen and (max-width: 1100px){
+                        display: none;
+                    }
+                }
+                a{
+                    display: flex;
+                    svg{
+                        transition: .2s ease-in-out;
+                        opacity: 0.7;
+                        width: 32px;
+                        height: auto;
+                    }
+                    &:hover{
+                        svg{
+                            opacity: 1;
+                            filter: drop-shadow(0px 0px 10px $red);
+                        }
+                    }
+                }
+            }
+            &__content{
+                display: flex;
+                flex-direction: column;
+                padding-right: 5px;
+                @media screen and (max-width: 767px){
+                    max-width: 150px;
+                }
+            }
+            &__btns{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                .btnBack__modules, 
+                .btnBack__projects{
+                    opacity: 0;
+                    pointer-events: none;
+                    transform: translate(20px, 0);
+                    transition-duration: .2s;
+                    position: absolute;
+                    @media screen and (max-width: 414px){
+                        font-size: 12px;
+                    }
+                    &--active{
+                        position: relative;
+                        opacity: 1;
+                        pointer-events: initial;
+                        display: flex;
+                        transform: translate(0,0);
+                    }
+                }
+            }   
             p{
                 color: $red;
                 font-family: Oxanium;
@@ -99,32 +167,6 @@
                     opacity: .7;
                     &:hover{
                         opacity: 1;
-                    }
-                }
-            }
-            &--2{
-                flex-direction: row;
-                align-items: center;
-                gap: 15px;
-                p{
-                    max-width: 300px;
-                    text-align: right;
-                    @media screen and (max-width: 575px){
-                        display: none;
-                    }
-                }
-                a{
-                    svg{
-                        transition: .2s ease-in-out;
-                        opacity: 0.7;
-                        width: 32px;
-                        height: auto;
-                    }
-                    &:hover{
-                        svg{
-                            opacity: 1;
-                            filter: drop-shadow(0px 0px 10px $red);
-                        }
                     }
                 }
             }
