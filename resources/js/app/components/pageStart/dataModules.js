@@ -14,7 +14,7 @@ import { runAbout } from '../../components/pageabout/about.js';
 function dataModulesContent() {
     const content = `
         <section class="dataModules">
-            <h2 class="title title--1 textShadow--white">${textType('Available data modules')}</h2>
+            <h2 class="title title--1 textShadow--white" data-text="Available data modules">${textType('Available data modules')}</h2>
             <div class="modules">
                 <div class="dataModule dataModule--0 col-12 col-xl-4">
                     <div class="dataModule__inner corners corners--hover">
@@ -79,16 +79,13 @@ function dataModulesBtns(){
 export function dataModulesRun() {
     clearContent();
     setTimeout(() => {
-        const contentContainer = $('#content');
-        const content = $(dataModulesContent());
-        content.appendTo(contentContainer);
-    
+        const contentContainer = document.querySelector('#content');
+        contentContainer.innerHTML = dataModulesContent();
+        
         // Run the text scramble animation after appending to the DOM
         const titleElement = document.querySelector('.dataModules .title--1');
-        if (titleElement) {
-            const fx = new TextScramble(titleElement);
-            fx.setText('Available data modules');
-        }
+        const fx = new TextScramble(titleElement);
+        fx.setText(titleElement.getAttribute('data-text'));        
 
         animFrom('.dataModules .title--1', 'right');
         animFrom('.dataModule--0 .dataModule__inner', 'down');

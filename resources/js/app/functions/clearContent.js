@@ -1,15 +1,16 @@
-import { stopGlitchModule } from '/resources/js/app/components/pageStart/dataModules.js';
+import { stopGlitchModule } from '../components/pageStart/dataModules.js';
+import { randomGlitch } from '../functions/randomGlitch.js';
 
 export function clearContent(){
     //stop current animations
     stopGlitchModule();
 
+    randomGlitch(10, 3, '#app');
+
     const contentElement = document.querySelector('#content');
     const elementToAnimate = contentElement.children[0];
 
     if (elementToAnimate){
-
-
 
         const keyframes = [
             { transform: 'translate(0)', opacity: 1 },

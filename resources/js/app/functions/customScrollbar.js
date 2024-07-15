@@ -12,3 +12,6 @@ export function customScrollbar(el) {
         }
     });
 }
+export function scrollTop(){
+    OverlayScrollbars(document.querySelector('.contentContainer')).scroll({ y: "0%" }, 'smooth');
+}

@@ -1,9 +1,10 @@
 import { clearContent } from '../../functions/clearContent.js';
 import { getSvg } from '../../functions/getSvg.js';
-import { customScrollbar } from '../../functions/customScrollbar.js';
+import { customScrollbar, scrollTop } from '../../functions/customScrollbar.js';
 import { TextScramble, textType } from '../../functions/textScramble.js';
 import { animFrom } from '../../functions/animTransform.js';
 import { showBackButton, closeBackButton } from '../../functions/backButtons.js';
+import { randomGlitch } from '../../functions/randomGlitch.js';
 
 import { runProjectData } from '../../components/pageArchiveSingle/projectData.js';
 
@@ -27,17 +28,17 @@ async function archiveContentList() {
     // Generowanie całej zawartości HTML
     const content = `
         <section class="archiveData">
-            <h2 class="title title--1 textShadow--white">${textType('Project data of the object')}</h2>
+            <h2 class="title title--1 textShadow--white" data-text="Project data of the object">${textType('Project data of the object')}</h2>
             <div class="archiveScreen">
                 <div class="archiveScreen__inner corners">
-                    <div class="archiveScreen__inner__el archiveScreen__inner__el--0 projectsList col-12 col-xl-3 offset-xl-1">
+                    <div class="archiveScreen__inner__el archiveScreen__inner__el--0 projectsList col-12 col-lg-4 col-xxl-3 offset-xxl-1">
                         <div class="projectsList__inner scrollbar">
                             <div class="projectsList__inner__list">
                                 ${projectsListItems}
                             </div>
                         </div>
                     </div>
-                    <div class="archiveScreen__inner__el archiveScreen__inner__el--1 archiveProjectContainer col-12 col-xl-7">
+                    <div class="archiveScreen__inner__el archiveScreen__inner__el--1 archiveProjectContainer col-12 col-lg-8  col-xxl-7 ">
                         <!-- Place for additional content -->
                     </div>
                 </div>
@@ -47,6 +48,7 @@ async function archiveContentList() {
 
     return content;
 }
+
 async function archiveContentSelected() {
     const activeElement = document.querySelector('.projectsList__inner__list__el--active');
     const activeElementId = activeElement ? activeElement.getAttribute('data-id') : null;
@@ -80,8 +82,8 @@ async function archiveContentSelected() {
                     <div class="archiveProject__inner__content__desc">
                         <p class="color--red">${project.desc}</p>
                         <div class="archiveProject__inner__content__desc__btns">
-                            <a class="btn btn--primary" href="${project.link}" target="_blank">Visit  website</a>
-                            <div class="btn btn--primary" data-id="${project.id}">View data</div>
+                            ${project.link ? `<a class="btn btn--primary" href="${project.link}" target="_blank">Visit website</a>` : ''}
+                            <div class="btn btn--primary runProjectData" data-id="${project.id}">View data</div>
                         </div>
                     </div>
                 </div>
@@ -98,9 +100,11 @@ function archiveContentBtns(){
     showBackButton('.btnBack__modules');
 
     const projectItems = document.querySelectorAll('.projectsList__inner__list__el');
-
     projectItems.forEach(item => {
         item.addEventListener('click', function() {
+
+            randomGlitch(15, 2, '.archiveData');
+            
             const currentActive = document.querySelector('.projectsList__inner__list__el--active');
             if (currentActive) {
                 currentActive.classList.remove('projectsList__inner__list__el--active');
@@ -115,18 +119,28 @@ function archiveContentBtns(){
                     if (archiveProjectContainer) {
                         archiveProjectContainer.innerHTML = project;
                         animFrom('.archiveProject', 'down');
+                        
+                        if(window.innerWidth < 992){
+                            scrollTop();
+                        }
 
+                        document.querySelector('.runProjectData').addEventListener('click', function() {
+                            const dataId = this.getAttribute('data-id');
+                            runProjectData(dataId);
+                        });
 
                     } else {
                         console.error('Element .archiveProjectContainer not found');
                     }
+
                 }).then(() => {
-                    customScrollbar('.archiveProject');
+                    if(window.innerWidth > 991){
+                        customScrollbar('.archiveProject');
+                    }
                 });
             }, 100);
         });
     });
-
 }
 
 export async function runArchive() {
@@ -135,6 +149,7 @@ export async function runArchive() {
         const contentContainer = document.getElementById('content');
 
         archiveContentList().then(list => {
+
             contentContainer.innerHTML = list;
 
             var archiveTitleElement = document.querySelector('.archiveData .title--1');
@@ -144,10 +159,9 @@ export async function runArchive() {
 
             // Run the text scramble animation after appending to the DOM
             const titleElement = document.querySelector('.archiveData .title--1');
-            if (titleElement) {
-                const fx = new TextScramble(titleElement);
-                fx.setText('Project data of the object');
-            }
+            const fx = new TextScramble(titleElement);
+            fx.setText(titleElement.getAttribute('data-text'));        
+
             animFrom('.archiveData .title--1', 'right');
             animFrom('.archiveScreen', 'down');
 
@@ -166,8 +180,14 @@ export async function runArchive() {
 
                     // Optional: Initialize custom scrollbars
                     setTimeout(function() {
-                        customScrollbar('.archiveProject');
+                        if(window.innerWidth > 991){
+                            customScrollbar('.archiveProject');
+                        }
                         archiveContentBtns();
+                        document.querySelector('.runProjectData').addEventListener('click', function() {
+                            const dataId = this.getAttribute('data-id');
+                            runProjectData(dataId);
+                        });
                     }, 100);
                 } else {
                     console.error('Element .archiveProjectContainer not found');
