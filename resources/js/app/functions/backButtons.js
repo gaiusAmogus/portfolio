@@ -1,5 +1,5 @@
-import { dataModulesRun } from '../components/pageStart/dataModules.js';
-import { runArchive } from '../components/pageArchive/archiveData.js';
+import { dataModulesRun } from '../components/dataModules.js';
+import { runArchive } from '../components/archiveData.js';
 
 export function showBackButton(el) {
     const element = document.querySelector(el);

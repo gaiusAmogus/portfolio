@@ -102,12 +102,21 @@ h3, h4, h5{
     line-height: normal;
     &--1{
         font-size: 22px;
+        @media screen and (max-width: 991px){
+            font-size: 18px;
+        }
     }
     &--2{
         font-size: 18px;
+        @media screen and (max-width: 991px){
+            font-size: 15px;
+        }
     }
     &--3{
         font-size: 15px;
+        @media screen and (max-width: 991px){
+            font-size: 12px;
+        }
     }
 }
 .title{

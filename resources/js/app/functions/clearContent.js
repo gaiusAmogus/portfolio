@@ -1,4 +1,4 @@
-import { stopGlitchModule } from '../components/pageStart/dataModules.js';
+import { stopGlitchModule } from '../components/dataModules.js';
 import { randomGlitch } from '../functions/randomGlitch.js';
 
 export function clearContent(){

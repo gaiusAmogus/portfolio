@@ -1,12 +1,12 @@
-import { clearContent } from '../../functions/clearContent.js';
-import { getSvg } from '../../functions/getSvg.js';
-import { customScrollbar, scrollTop } from '../../functions/customScrollbar.js';
-import { TextScramble, textType } from '../../functions/textScramble.js';
-import { animFrom } from '../../functions/animTransform.js';
-import { showBackButton, closeBackButton } from '../../functions/backButtons.js';
-import { randomGlitch } from '../../functions/randomGlitch.js';
+import { clearContent } from '../functions/clearContent.js';
+import { getSvg } from '../functions/getSvg.js';
+import { customScrollbar, scrollTop } from '../functions/customScrollbar.js';
+import { TextScramble, textType } from '../functions/textScramble.js';
+import { animFrom } from '../functions/animTransform.js';
+import { showBackButton, closeBackButton } from '../functions/backButtons.js';
+import { randomGlitch } from '../functions/randomGlitch.js';
 
-import { runProjectData } from '../../components/pageArchiveSingle/projectData.js';
+import { runProjectData } from '../components/projectData.js';
 
 
 async function archiveContentList() {
@@ -80,7 +80,7 @@ async function archiveContentSelected() {
                         <h3 class="color--red">${project.title}</h3>
                     </div>
                     <div class="archiveProject__inner__content__desc">
-                        <p class="color--red">${project.desc}</p>
+                        <p class="color--red">${project.excerpt}</p>
                         <div class="archiveProject__inner__content__desc__btns">
                             ${project.link ? `<a class="btn btn--primary" href="${project.link}" target="_blank">Visit website</a>` : ''}
                             <div class="btn btn--primary runProjectData" data-id="${project.id}">View data</div>
@@ -152,13 +152,15 @@ export async function runArchive() {
 
             contentContainer.innerHTML = list;
 
-            var archiveTitleElement = document.querySelector('.archiveData .title--1');
-            var archiveTitleHeight = archiveTitleElement.clientHeight + parseFloat(getComputedStyle(archiveTitleElement).marginBottom);
-            var archiveScreenHeight = document.querySelector('.contentContainer').clientHeight - archiveTitleHeight - 5;
-            document.querySelector('.archiveData .archiveScreen__inner').style.height = archiveScreenHeight + 'px';
+            var titleElement = document.querySelector('.archiveData .title--1');
+            if(window.innerWidth > 991){
+                var archiveTitleHeight = titleElement.clientHeight + parseFloat(getComputedStyle(titleElement).marginBottom);
+                var archiveScreenHeight = document.querySelector('.contentContainer').clientHeight - archiveTitleHeight - 5;
+                document.querySelector('.archiveData .archiveScreen__inner').style.height = archiveScreenHeight + 'px';
+            }
+
 
             // Run the text scramble animation after appending to the DOM
-            const titleElement = document.querySelector('.archiveData .title--1');
             const fx = new TextScramble(titleElement);
             fx.setText(titleElement.getAttribute('data-text'));        
 

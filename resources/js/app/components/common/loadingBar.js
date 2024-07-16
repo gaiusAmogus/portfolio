@@ -1,6 +1,6 @@
 import { getSvg } from '../../functions/getSvg.js';
 import { acronymEl } from '../../functions/acronymEl.js';
-import { dataModulesRun } from '../../components/pageStart/dataModules.js';
+import { dataModulesRun } from '../../components/dataModules.js';
 
 export function loadingBar(){
     var siteLines = 

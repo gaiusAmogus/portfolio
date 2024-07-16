@@ -1,13 +1,13 @@
-import { clearContent } from '../../functions/clearContent.js';
-import { getSvg } from '../../functions/getSvg.js';
-import { customScrollbar } from '../../functions/customScrollbar.js';
-import { TextScramble, textType } from '../../functions/textScramble.js';
-import { animFrom } from '../../functions/animTransform.js';
-import { acronymEl } from '../../functions/acronymEl.js';
-import { closeBackButton } from '../../functions/backButtons.js';
+import { clearContent } from '../functions/clearContent.js';
+import { getSvg } from '../functions/getSvg.js';
+import { customScrollbar } from '../functions/customScrollbar.js';
+import { TextScramble, textType } from '../functions/textScramble.js';
+import { animFrom } from '../functions/animTransform.js';
+import { acronymEl } from '../functions/acronymEl.js';
+import { closeBackButton } from '../functions/backButtons.js';
 
-import { runArchive } from '../../components/pageArchive/archiveData.js';
-import { runAbout } from '../../components/pageabout/about.js';
+import { runArchive } from '../components/archiveData.js';
+import { runAbout } from './about.js';
 
 
 

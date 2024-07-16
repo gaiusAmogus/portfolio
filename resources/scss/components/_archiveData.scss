@@ -1,6 +1,7 @@
 .archiveData{
     .title--1{
         margin-bottom: 36px;
+        white-space: nowrap;
     }
     .archiveScreen{
         &__inner{
@@ -18,7 +19,7 @@
                 padding: 0;
                 border: 0;
                 background: transparent;
-                height: fit-content !important;
+                height: fit-content;
                 max-height: fit-content;
             }
         }
