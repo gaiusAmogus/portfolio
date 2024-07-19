@@ -28,8 +28,8 @@ async function archiveContentList() {
     // Generowanie całej zawartości HTML
     const content = `
         <section class="archiveData">
-            <h2 class="title title--1 textShadow--white" data-text="Project data of the object">${textType('Project data of the object')}</h2>
-            <div class="archiveScreen">
+            <h2 class="title title--1 textShadow--white" data-text="Project data of the object" style="opacity: 0">${textType('Project data of the object')}</h2>
+            <div class="archiveScreen" style="opacity: 0">
                 <div class="archiveScreen__inner corners">
                     <div class="archiveScreen__inner__el archiveScreen__inner__el--0 projectsList col-12 col-lg-4 col-xxl-3 offset-xxl-1">
                         <div class="projectsList__inner scrollbar">
@@ -70,7 +70,7 @@ async function archiveContentSelected() {
 
     // Generowanie całej zawartości HTML
     const content = `
-        <div class="archiveProject">
+        <div class="archiveProject" style="opacity: 0">
             <div class="archiveProject__inner">
                 <div class="archiveProject__inner__img">
                     <img src="${project.thumb}" alt="${project.name}">
@@ -115,6 +115,10 @@ function archiveContentBtns(){
                 
                 archiveContentSelected().then(project => {
 
+                    if(window.innerWidth > 991){
+                        customScrollbar('.archiveProject');
+                    }
+
                     // Sprawdzenie czy archiveProjectContainer został znaleziony
                     if (archiveProjectContainer) {
                         archiveProjectContainer.innerHTML = project;
@@ -133,11 +137,7 @@ function archiveContentBtns(){
                         console.error('Element .archiveProjectContainer not found');
                     }
 
-                }).then(() => {
-                    if(window.innerWidth > 991){
-                        customScrollbar('.archiveProject');
-                    }
-                });
+                })
             }, 100);
         });
     });
@@ -159,17 +159,17 @@ export async function runArchive() {
                 document.querySelector('.archiveData .archiveScreen__inner').style.height = archiveScreenHeight + 'px';
             }
 
-
-            // Run the text scramble animation after appending to the DOM
-            const fx = new TextScramble(titleElement);
-            fx.setText(titleElement.getAttribute('data-text'));        
-
-            animFrom('.archiveData .title--1', 'right');
-            animFrom('.archiveScreen', 'down');
-
             // Optional: Initialize custom scrollbars
             setTimeout(function() {
                 customScrollbar('.projectsList__inner');
+
+                // Run the text scramble animation after appending to the DOM
+                const fx = new TextScramble(titleElement);
+                fx.setText(titleElement.getAttribute('data-text'));        
+
+                animFrom('.archiveData .title--1', 'right');
+                animFrom('.archiveScreen', 'down');
+    
             }, 100);
         }).then(() => {
             const archiveProjectContainer = document.querySelector('.archiveProjectContainer');
@@ -178,7 +178,6 @@ export async function runArchive() {
                 // Sprawdzenie czy archiveProjectContainer został znaleziony
                 if (archiveProjectContainer) {
                     archiveProjectContainer.innerHTML = project;
-                    animFrom('.archiveProject', 'down');
 
                     // Optional: Initialize custom scrollbars
                     setTimeout(function() {
@@ -190,6 +189,7 @@ export async function runArchive() {
                             const dataId = this.getAttribute('data-id');
                             runProjectData(dataId);
                         });
+                        animFrom('.archiveProject', 'down');
                     }, 100);
                 } else {
                     console.error('Element .archiveProjectContainer not found');

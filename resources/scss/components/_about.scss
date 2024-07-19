@@ -1,0 +1,431 @@
+.aboutData{
+    height: 100%;
+    max-height: 100%;
+    .row{
+        gap: 40px 0;
+    }
+    &__prof{
+        border: 2px solid #730505;
+        img{
+            width: 100%;
+            height: auto;
+            display: flex;
+        }
+    }
+    &__desc{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        &__list{
+            &__el{
+                text-transform: uppercase;
+                &__val{
+                    display: inline-block;
+                    opacity: 0;
+                }
+                &--0{
+                    .aboutData__desc__list__el__val{
+                        animation: listEl .5s ease-in-out forwards;
+                    }
+                }
+                &--1{
+                    .aboutData__desc__list__el__val{
+                        animation: listEl .5s ease-in-out .5s forwards;
+                    }
+                }
+                &--2{
+                    .aboutData__desc__list__el__val{
+                        animation: listEl .5s ease-in-out 1s forwards;
+                    }
+                }
+                &--3{
+                    .aboutData__desc__list__el__val{
+                        animation: listEl .5s ease-in-out 1.5s forwards;
+                    }
+                }
+                @keyframes listEl {
+                    0%{
+                        opacity: 0;
+                    }
+                    100%{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    &__human{
+        &__inner{
+            width: 100%;
+            height: 100%;
+            border: 2px solid #730505;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            svg{
+                filter: drop-shadow(0px 0px 3px #730505);
+                width: 100%;
+                max-width: 140px;
+                height: auto;
+                animation: pulsate 3s infinite linear;
+                @keyframes pulsate {
+                    0% {
+                      filter: drop-shadow(0px 0px 3px #730505);
+                    }
+                    50% {
+                      filter: drop-shadow(0px 0px 10px #730505);
+                    }
+                    100% {
+                      filter: drop-shadow(0px 0px 3px #730505);
+                    }
+                  }
+            }
+        }
+    }
+
+    &__brain{
+        width: 410px;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 1s ease-in-out;
+        &__analyse{
+            display: flex;
+            width: fit-content;
+            padding: 20px 15px;
+            border: 2px solid $red;
+            background: rgba(0, 0, 0, 0.20);
+    
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+            width: fit-content;
+            p{
+                color: $white;
+                text-shadow: 0px 0px 20px rgba(233, 233, 233, 0.77);
+                font-family: Oxanium;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                white-space: nowrap;
+            }
+            &--anim{
+                opacity: 0;
+                animation: blink .5s ease-in-out 2;
+                @keyframes blink {
+                    0%, 100% {
+                      opacity: 0;
+                    }
+                    50% {
+                      opacity: 1;
+                    }
+                }
+            }
+        }
+        &__inner{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+            border: 3px solid #730505;
+            opacity: .5;
+            svg{
+                width: 100%;
+                max-width: 285px;
+                height: auto;
+                filter: drop-shadow(0px 0px 10px #730505);
+            }
+        }
+        &__skillBar{
+            position: absolute;
+            width: 162px;
+            height: 57px;
+            opacity: 0;
+            &__inner{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                padding: 5px;
+                text-transform: uppercase;
+                &__bg{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    pointer-events: none;
+                }
+                &__title{
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                &__lines{
+                    display: flex;
+                }
+                &__lvl{
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+            &__pointer{
+                position: absolute;
+                top: 50%;
+            }
+            &--0{
+                top: -5px;
+                left: -200px;
+                .aboutData__brain__skillBar__inner__title{
+                    color: #F7E018;
+                }
+                .aboutData__brain__skillBar__inner__lines svg line{
+                    stroke: #F7E018;
+                }
+                .aboutData__brain__skillBar__pointer{
+                    left: 100%;
+                }
+            }
+            &--1{
+                top: -20px;
+                right: -220px;
+                .aboutData__brain__skillBar__inner__title{
+                    color: #F16529;
+                }
+                .aboutData__brain__skillBar__inner__lines svg line{
+                    stroke: #F16529;
+                }
+                .aboutData__brain__skillBar__pointer{
+                    right: 100%
+                }
+            }
+            &--2{
+                top: 85px;
+                left: -230px;
+                .aboutData__brain__skillBar__inner__title{
+                    color: #61DAFB;
+                }
+                .aboutData__brain__skillBar__inner__lines svg line{
+                    stroke: #61DAFB;
+                }
+                .aboutData__brain__skillBar__pointer{
+                    left: 100%;
+                    top: -14px;
+                }
+            }
+            &--3{
+                top: 75px;
+                right: -210px;
+                .aboutData__brain__skillBar__inner__title{
+                    color: #13ED0F;
+                }
+                .aboutData__brain__skillBar__inner__lines svg line{
+                    stroke: #13ED0F;
+                }
+                .aboutData__brain__skillBar__pointer{
+                    right: 100%
+                }
+            }
+            &--4{
+                top: 183px;
+                right: -210px;
+                .aboutData__brain__skillBar__inner__title{
+                    color: #4F5B93;
+                }
+                .aboutData__brain__skillBar__inner__lines svg line{
+                    stroke: #4F5B93;
+                }
+                .aboutData__brain__skillBar__pointer{
+                    right: 100%;
+                    top: -39px;
+                }
+            }
+            &--5{
+                top: 255px;
+                left: -80px;
+                .aboutData__brain__skillBar__inner__title{
+                    color: #9D6193;
+                }
+                .aboutData__brain__skillBar__inner__lines svg line{
+                    stroke: #9D6193;
+                }
+                .aboutData__brain__skillBar__pointer{
+                    left: 100%;
+                    top: -60px;
+                }
+            }
+            &--6{
+                top: 255px;
+                right: -25px;
+                .aboutData__brain__skillBar__inner__title{
+                    color: #32373C;
+                }
+                .aboutData__brain__skillBar__inner__lines svg line{
+                    stroke: #32373C;
+                }
+                .aboutData__brain__skillBar__pointer{
+                    top: -77px;
+                    left: 0;
+                }
+            }
+        }
+        &--active{
+            left: 50%;
+            transform: translateX(-50%);
+            .aboutData__brain__skillBar{
+                &--0,
+                &--1,
+                &--2,
+                &--3,
+                &--4,
+                &--5,
+                &--6{
+                    opacity: 0;
+                }
+                &--0{
+                    animation: changeSkillBar .5s ease-in-out 1s forwards;
+                }
+                &--1{
+                    animation: changeSkillBar .5s ease-in-out 1.5s forwards;
+                }
+                &--2{
+                    animation: changeSkillBar .5s ease-in-out 2s forwards;
+                }
+                &--3{
+                    animation: changeSkillBar .5s ease-in-out 2.5s forwards;
+                }
+                &--4{
+                    animation: changeSkillBar .5s ease-in-out 3s forwards;
+                }
+                &--5{
+                    animation: changeSkillBar .5s ease-in-out 3.5s forwards;
+                }
+                &--6{
+                    animation: changeSkillBar .5s ease-in-out 4s forwards;
+                }
+                @keyframes changeSkillBar{
+                    0%{
+                        opacity: 0;
+                    }
+                    100%{
+                        opacity: 1;
+                    }
+                }
+
+            }
+            .aboutData__brain__inner{
+                opacity: 1;
+                svg{
+                    #Vector_2,
+                    #Vector_3,
+                    #Vector_4,
+                    #Vector_5,
+                    #Vector_6,
+                    #Vector_7,
+                    #Vector_8{
+                        fill: #730505;
+                        filter: drop-shadow(0px 0px 10px #730505);
+                    }
+                    #Vector_2{
+                        animation: changeVector_2 .5s ease-in-out 1s forwards;
+                        @keyframes changeVector_2{
+                            0%{
+                                fill: #730505;
+                                filter: drop-shadow(0px 0px 10px #730505);
+                            }
+                            100%{
+                                fill: #F7E018;
+                                filter: drop-shadow(0px 0px 10px #F7E018);
+                            }
+                        }
+                    }
+                    #Vector_4{
+                        animation: changeVector_4 .5s ease-in-out 1.5s forwards;
+                        @keyframes changeVector_4{
+                            0%{
+                                fill: #730505;
+                                filter: drop-shadow(0px 0px 10px #730505);
+                            }
+                            100%{
+                                fill: #F16529;
+                                filter: drop-shadow(0px 0px 10px #F16529);
+                            }
+                        }
+                    }
+                    #Vector_3{
+                        animation: changeVector_3 .5s ease-in-out 2s forwards;
+                        @keyframes changeVector_3{
+                            0%{
+                                fill: #730505;
+                                filter: drop-shadow(0px 0px 10px #730505);
+                            }
+                            100%{
+                                fill: #61DAFB;
+                                filter: drop-shadow(0px 0px 10px #61DAFB);
+                            }
+                        }
+                    }
+                    #Vector_5{
+                        animation: changeVector_5 .5s ease-in-out 2.5s forwards;
+                        @keyframes changeVector_5{
+                            0%{
+                                fill: #730505;
+                                filter: drop-shadow(0px 0px 10px #730505);
+                            }
+                            100%{
+                                fill: #13ED0F;
+                                filter: drop-shadow(0px 0px 10px #13ED0F);
+                            }
+                        }
+                    }
+                    #Vector_6{
+                        animation: changeVector_6 .5s ease-in-out 3s forwards;
+                        @keyframes changeVector_6{
+                            0%{
+                                fill: #730505;
+                                filter: drop-shadow(0px 0px 10px #730505);
+                            }
+                            100%{
+                                fill: #4F5B93;
+                                filter: drop-shadow(0px 0px 10px #4F5B93);
+                            }
+                        }
+                    }
+                    #Vector_8{
+                        animation: changeVector_8 .5s ease-in-out 3.5s forwards;
+                        @keyframes changeVector_8{
+                            0%{
+                                fill: #730505;
+                                filter: drop-shadow(0px 0px 10px #730505);
+                            }
+                            100%{
+                                fill: #9D6193;
+                                filter: drop-shadow(0px 0px 10px #9D6193);
+                            }
+                        }
+                    }
+                    #Vector_7{
+                        animation: changeVector_7 .5s ease-in-out 4s forwards;
+                        @keyframes changeVector_7{
+                            0%{
+                                fill: #730505;
+                                filter: drop-shadow(0px 0px 10px #730505);
+                            }
+                            100%{
+                                fill: #32373C;
+                                filter: drop-shadow(0px 0px 10px #32373C);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

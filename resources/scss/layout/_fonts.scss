@@ -37,7 +37,7 @@ h1,h2,h3,h4,h5{
     margin: 0;
 }
 h1{
-    font-size: 64px;
+    font-size: 60px;
     @media screen and (max-width: 575px){
         font-size: 25px;
     }
@@ -125,7 +125,7 @@ h3, h4, h5{
     font-weight: 400;
     line-height: normal;
     &--1{
-        font-size: 64px;
+        font-size: 60px;
         @media screen and (max-width: 575px){
             font-size: 25px;
         }

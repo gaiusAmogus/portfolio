@@ -26,3 +26,23 @@ img {
 :focus {
     outline: 0 !important;
 }
+#pageTitle{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    color: #730505;
+    text-shadow: 0px 0px 15px rgba(141, 8, 8, 0.77);
+    font-size: 100px;
+    animation: titleShow 2s ease-in-out forwards;
+    opacity: 0;
+    @keyframes titleShow {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: .1;
+        }
+    }
+}

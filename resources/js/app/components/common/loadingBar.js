@@ -43,6 +43,11 @@ export function loadingBar(){
             $('.header').addClass('header--show');
             $('.footer').addClass('footer--show');
             setTimeout(() => {
+                const pageTitle = document.createElement('h1');
+                pageTitle.id = 'pageTitle';
+                pageTitle.textContent = 'void netRun()';
+                document.querySelector('#app').appendChild(pageTitle);
+                
                 dataModulesRun();
             }, 3000);
         }

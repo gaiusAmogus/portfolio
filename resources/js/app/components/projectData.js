@@ -20,7 +20,7 @@ async function projectDataContent(dataId) {
 
     // Generowanie całej zawartości HTML
     const content = `
-        <section class="projectData row">
+        <section class="projectData row" style="opacity: 0">
             <div class="col-12 projectData__title">
                 <h2 class="title title--1" data-text="${project.name}">${textType(project.name)}</h2>
                 ${project.link ? `<a class="btn btn--primary" href="${project.link}" target="_blank">Visit website</a>` : ''}
@@ -46,6 +46,11 @@ async function projectDataContent(dataId) {
 
 }
 
+function projectDataBtns(){
+    closeBackButton('.btnBack__modules');
+    showBackButton('.btnBack__projects');
+}
+
 export async function runProjectData(dataId) {
     clearContent();
     setTimeout(async () => {
@@ -63,10 +68,7 @@ export async function runProjectData(dataId) {
             }
             // Opcjonalnie: Inicjalizacja niestandardowych pasków przewijania
             setTimeout(() => {
-                if (window.innerWidth < 992) {
-                    customScrollbar('.contentContainer');
-                }
-                else{
+                if (window.innerWidth > 991) {
                     customScrollbar('.projectData__content');
                 }
                 customScrollbar('.projectData__gallery');
@@ -77,7 +79,6 @@ export async function runProjectData(dataId) {
                 const fx = new TextScramble(titleElement);
                 fx.setText(titleElement.getAttribute('data-text'));        
                 animFrom('.projectData .title--1', 'right');
-
                 animFrom('.projectData', 'down');
 
             }, 100);
@@ -87,9 +88,3 @@ export async function runProjectData(dataId) {
     }, 350);
 }
 
-
-
-function projectDataBtns(){
-    closeBackButton('.btnBack__modules');
-    showBackButton('.btnBack__projects');
-}

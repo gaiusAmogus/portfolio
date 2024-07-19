@@ -38,7 +38,7 @@ export function headerFooter() {
                     </div>
                 </div>
                 <div class="footer__row__el footer__row__el--2">
-                    <p><span>If you want to offer me cooperation write to </span><a href="mailto:piratecodehq@gmail.com" class="link link--red">piratecodehq@gmail.com</a></p>
+                    <p><span>If you want to offer me cooperation write to </span><a href="mailto:kontakt@voidnetrun.it" class="link link--red">kontakt@voidnetrun.it</a></p>
                     <a href="/">${getSvg('linkedin')}</a>
                     <a href="/">${getSvg('github')}</a>
                 </div>
@@ -52,7 +52,7 @@ export function headerFooter() {
     
     var contentContainer = 
     `
-        <section class="contentContainer" style="max-height: calc(100vh - ${headerFooterSpace}px)">
+        <section class="contentContainer" data-about="0" style="max-height: calc(100vh - ${headerFooterSpace}px)">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
