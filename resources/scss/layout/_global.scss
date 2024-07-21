@@ -37,12 +37,25 @@ img {
     font-size: 100px;
     animation: titleShow 2s ease-in-out forwards;
     opacity: 0;
+    white-space: nowrap;
+    @media screen and (max-width: 575px){
+        font-size: 35px;
+    }
+    @media screen and (min-width: 576px) and (max-width: 991px){
+        font-size: 60px;
+    }
+    @media screen and (min-width: 992px) and (max-width: 1199px){
+        font-size: 80px;
+    }
     @keyframes titleShow {
         0%{
             opacity: 0;
         }
         100%{
             opacity: .1;
+            @media screen and (max-width: 991px){
+                opacity: .05;
+            }
         }
     }
 }

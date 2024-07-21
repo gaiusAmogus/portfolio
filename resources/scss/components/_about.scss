@@ -4,14 +4,21 @@
     .row{
         gap: 40px 0;
     }
+
     &__prof{
         border: 2px solid #730505;
+        @media screen and (max-width: 991px){
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
         img{
             width: 100%;
             height: auto;
             display: flex;
         }
     }
+
     &__desc{
         display: flex;
         flex-direction: column;
@@ -54,6 +61,7 @@
             }
         }
     }
+
     &__human{
         &__inner{
             width: 100%;
@@ -91,6 +99,16 @@
         top: 0;
         left: 0;
         transition: 1s ease-in-out;
+        @media screen and (max-width: 991px){
+            width: 100%;
+            max-width: 410px;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 15px 10px;
+            margin: 0 auto;
+        }
         &__analyse{
             display: flex;
             width: fit-content;
@@ -104,6 +122,10 @@
             transform: translate(-50%, -50%);
             z-index: 3;
             width: fit-content;
+            @media screen and (max-width: 991px){
+                top: 100px;
+                transform: translate(-50%, 0);
+            }
             p{
                 color: $white;
                 text-shadow: 0px 0px 20px rgba(233, 233, 233, 0.77);
@@ -113,6 +135,9 @@
                 font-weight: 400;
                 line-height: normal;
                 white-space: nowrap;
+                @media screen and (max-width: 991px){
+                    font-size: 20px;
+                }
             }
             &--anim{
                 opacity: 0;
@@ -134,6 +159,9 @@
             padding: 25px;
             border: 3px solid #730505;
             opacity: .5;
+            @media screen and (max-width: 991px){
+                width: 100%;
+            }
             svg{
                 width: 100%;
                 max-width: 285px;
@@ -146,6 +174,10 @@
             width: 162px;
             height: 57px;
             opacity: 0;
+            @media screen and (max-width: 425px){
+                width: 100%;
+                height: auto;
+            }
             &__inner{
                 position: relative;
                 display: flex;
@@ -153,12 +185,19 @@
                 gap: 4px;
                 padding: 5px;
                 text-transform: uppercase;
+                @media screen and (max-width: 425px){
+                    background: rgba(0, 0, 0, 0.20);
+                    border: 2px solid $red;
+                }
                 &__bg{
                     position: absolute;
                     top: 0;
                     left: 0;
                     z-index: 1;
                     pointer-events: none;
+                    @media screen and (max-width: 425px){
+                        display: none;
+                    }
                 }
                 &__title{
                     font-size: 16px;
@@ -179,6 +218,9 @@
             &__pointer{
                 position: absolute;
                 top: 50%;
+                @media screen and (max-width: 991px){
+                    display: none;
+                }
             }
             &--0{
                 top: -5px;
@@ -275,10 +317,19 @@
                     left: 0;
                 }
             }
+            @media screen and (max-width: 991px){
+                position: relative;
+                left: auto;
+                top: auto;
+                bottom: auto;
+                right: auto;
+            }
         }
         &--active{
-            left: 50%;
-            transform: translateX(-50%);
+            @media screen and (min-width: 992px){
+                left: 50%;
+                transform: translateX(-50%);
+            }
             .aboutData__brain__skillBar{
                 &--0,
                 &--1,

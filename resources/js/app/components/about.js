@@ -62,7 +62,7 @@ function aboutContent() {
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-3">
+                <div class="col-12 col-lg-3 d-none d-lg-block">
                     <div class="aboutData__human">
                         <div class="aboutData__human__inner">${getSvg('human')}</div>
                     </div>
@@ -131,6 +131,7 @@ export function runAbout(){
         }
     }, 350);
 } 
+
 function getSkill(title, lvl, index) {
     const levels = {
         1: 'BEGINNER',
