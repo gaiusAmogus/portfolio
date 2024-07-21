@@ -6,11 +6,11 @@
             "title": "Lorem ipsum dolor sit amet, consectetur ",
             "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
             "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
+            "thumb": "assets/img/bin/portfolioTest.jpg",
             "images": [
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg"
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg"
             ],
             "link": "http://example.com/element1"
         },
@@ -20,11 +20,11 @@
             "title": "Lorem ipsum dolor sit amet, consectetur ",
             "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
             "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
+            "thumb": "assets/img/bin/portfolioTest.jpg",
             "images": [
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg"
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg"
             ],
             "link": "http://example.com/element1"
         },
@@ -34,11 +34,11 @@
             "title": "Lorem ipsum dolor sit amet, consectetur ",
             "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
             "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
+            "thumb": "assets/img/bin/portfolioTest.jpg",
             "images": [
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg"
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg"
             ],
             "link": "http://example.com/element1"
         },
@@ -48,11 +48,11 @@
             "title": "Lorem ipsum dolor sit amet, consectetur ",
             "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
             "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
+            "thumb": "assets/img/bin/portfolioTest.jpg",
             "images": [
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg"
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg"
             ],
             "link": "http://example.com/element1"
         },
@@ -62,11 +62,11 @@
             "title": "Lorem ipsum dolor sit amet, consectetur ",
             "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
             "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
+            "thumb": "assets/img/bin/portfolioTest.jpg",
             "images": [
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg"
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg"
             ],
             "link": "http://example.com/element1"
         },
@@ -76,11 +76,11 @@
             "title": "Lorem ipsum dolor sit amet, consectetur ",
             "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
             "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
+            "thumb": "assets/img/bin/portfolioTest.jpg",
             "images": [
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg"
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg"
             ],
             "link": "http://example.com/element1"
         },
@@ -90,11 +90,11 @@
             "title": "Lorem ipsum dolor sit amet, consectetur ",
             "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
             "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
+            "thumb": "assets/img/bin/portfolioTest.jpg",
             "images": [
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg"
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg"
             ],
             "link": "http://example.com/element1"
         },
@@ -104,11 +104,11 @@
             "title": "Lorem ipsum dolor sit amet, consectetur ",
             "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
             "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
+            "thumb": "assets/img/bin/portfolioTest.jpg",
             "images": [
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg"
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg"
             ],
             "link": "http://example.com/element1"
         },
@@ -118,11 +118,11 @@
             "title": "Lorem ipsum dolor sit amet, consectetur ",
             "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
             "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
+            "thumb": "assets/img/bin/portfolioTest.jpg",
             "images": [
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg"
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg"
             ],
             "link": "http://example.com/element1"
         },
@@ -132,11 +132,11 @@
             "title": "Lorem ipsum dolor sit amet, consectetur ",
             "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
             "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
+            "thumb": "assets/img/bin/portfolioTest.jpg",
             "images": [
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg"
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg"
             ],
             "link": "http://example.com/element1"
         },
@@ -146,11 +146,11 @@
             "title": "Lorem ipsum dolor sit amet, consectetur ",
             "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
             "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
+            "thumb": "assets/img/bin/portfolioTest.jpg",
             "images": [
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg"
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg"
             ],
             "link": "http://example.com/element1"
         },
@@ -160,11 +160,11 @@
             "title": "Lorem ipsum dolor sit amet, consectetur ",
             "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
             "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
+            "thumb": "assets/img/bin/portfolioTest.jpg",
             "images": [
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg"
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg"
             ],
             "link": "http://example.com/element1"
         },
@@ -174,11 +174,11 @@
             "title": "Lorem ipsum dolor sit amet, consectetur ",
             "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
             "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
+            "thumb": "assets/img/bin/portfolioTest.jpg",
             "images": [
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg"
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg"
             ],
             "link": "http://example.com/element1"
         },
@@ -188,11 +188,11 @@
             "title": "Lorem ipsum dolor sit amet, consectetur ",
             "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
             "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
+            "thumb": "assets/img/bin/portfolioTest.jpg",
             "images": [
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg"
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg"
             ],
             "link": "http://example.com/element1"
         },
@@ -202,11 +202,11 @@
             "title": "Lorem ipsum dolor sit amet, consectetur ",
             "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
             "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
+            "thumb": "assets/img/bin/portfolioTest.jpg",
             "images": [
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg",
-                "http://localhost/portfolio/assets/img/bin/portfolioTest.jpg"
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg",
+                "assets/img/bin/portfolioTest.jpg"
             ],
             "link": "http://example.com/element1"
         }

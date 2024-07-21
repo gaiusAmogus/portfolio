@@ -73,7 +73,7 @@ async function archiveContentSelected() {
         <div class="archiveProject" style="opacity: 0">
             <div class="archiveProject__inner">
                 <div class="archiveProject__inner__img">
-                    <img src="${project.thumb}" alt="${project.name}">
+                    <img src="${window.location.href}/${project.thumb}" alt="${project.name}">
                 </div>
                 <div class="archiveProject__inner__content">
                     <div class="archiveProject__inner__content__title">
@@ -82,8 +82,8 @@ async function archiveContentSelected() {
                     <div class="archiveProject__inner__content__desc">
                         <p class="color--red">${project.excerpt}</p>
                         <div class="archiveProject__inner__content__desc__btns">
-                            ${project.link ? `<a class="btn btn--primary" href="${project.link}" target="_blank">Visit website</a>` : ''}
                             <div class="btn btn--primary runProjectData" data-id="${project.id}">View data</div>
+                            ${project.link ? `<a class="btn btn--primary" href="${project.link}" target="_blank">Visit website</a>` : ''}
                         </div>
                     </div>
                 </div>

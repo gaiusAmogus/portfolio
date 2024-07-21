@@ -52,7 +52,7 @@ export function headerFooter() {
     
     var contentContainer = 
     `
-        <section class="contentContainer" data-about="0" style="max-height: calc(100vh - ${headerFooterSpace}px)">
+        <section class="contentContainer" data-about="0" style="max-height: calc(100% - ${headerFooterSpace}px)">
             <div class="container">
                 <div class="row">
                     <div class="col-12">

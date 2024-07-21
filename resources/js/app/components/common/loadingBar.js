@@ -47,7 +47,9 @@ export function loadingBar(){
                 pageTitle.id = 'pageTitle';
                 pageTitle.textContent = 'void netRun()';
                 document.querySelector('#app').appendChild(pageTitle);
-                
+            }, 1000);
+
+            setTimeout(() => {
                 dataModulesRun();
             }, 3000);
         }

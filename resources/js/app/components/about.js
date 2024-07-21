@@ -45,7 +45,7 @@ function aboutContent() {
             <div class="row">
                 <div class="col-12 col-lg-4">
                     <div class="aboutData__prof">
-                        <img src="assets/img/bin/prof.jpg" alt="profilPicture">
+                        <img src="${window.location.href}/assets/img/bin/prof.jpg" alt="profilPicture">
                     </div>
                 </div>
                 <div class="col-12 col-lg-5">

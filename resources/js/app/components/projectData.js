@@ -35,7 +35,7 @@ async function projectDataContent(dataId) {
             <div class="col-12 col-lg-7 projectData__galleryCol">
                 <div class="projectData__gallery corners">
                     <div class="projectData__gallery__inner">
-                        ${project.images.map(image => `<img class="projectData__gallery__inner__img" src="${image}" alt="Image">`).join('')}
+                        ${project.images.map(image => `<img class="projectData__gallery__inner__img" src="${window.location.href}/${image}" alt="Image">`).join('')}
                     </div>
                 </div>
             </div>

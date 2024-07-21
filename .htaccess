@@ -1,2 +1,16 @@
+# Włączenie modułu mod_rewrite
 RewriteEngine On
-RewriteRule ^mojastrona\.html$ index.html [NC,L]
+
+# Przekierowanie z HTTP na HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Usuwanie index.html z URL
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^(.*)index\.html$ /$1 [R=301,NC,L]
+
+# Obsługa adresu bez index.html jako domyślnego pliku
+DirectoryIndex index.html
+
+# Przekierowanie błędów 404 na stronę główną
+ErrorDocument 404 /index.html
