@@ -115,13 +115,12 @@ function archiveContentBtns(){
                 
                 archiveContentSelected().then(project => {
 
-                    if(window.innerWidth > 991){
-                        customScrollbar('.archiveProject');
-                    }
-
                     // Sprawdzenie czy archiveProjectContainer został znaleziony
                     if (archiveProjectContainer) {
                         archiveProjectContainer.innerHTML = project;
+                        if(window.innerWidth > 991){
+                            customScrollbar('.archiveProject');
+                        }
                         animFrom('.archiveProject', 'down');
                         
                         if(window.innerWidth < 992){

@@ -207,6 +207,48 @@
                 }
                 &__lines{
                     display: flex;
+                    &--1{
+                        svg{
+                            line{
+                                &:nth-child(2),
+                                &:nth-child(3),
+                                &:nth-child(4),
+                                &:nth-child(5){
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                    &--2{
+                        svg{
+                            line{
+                                &:nth-child(3),
+                                &:nth-child(4),
+                                &:nth-child(5){
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                    &--3{
+                        svg{
+                            line{
+                                &:nth-child(4),
+                                &:nth-child(5){
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                    &--4{
+                        svg{
+                            line{
+                                &:nth-child(5){
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
                 }
                 &__lvl{
                     font-size: 14px;

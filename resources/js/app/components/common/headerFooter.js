@@ -121,7 +121,7 @@ function getBrowserInfo() {
         browserName = "Microsoft Edge";
         fullVersion = userAgent.substring(versionOffset + 5);
     } else if ((versionOffset = userAgent.indexOf("Chrome")) !== -1) {
-        browserName = "Google Chrome";
+        browserName = "Chrome";
         fullVersion = userAgent.substring(versionOffset + 7);
     } else if ((versionOffset = userAgent.indexOf("Safari")) !== -1) {
         browserName = "Apple Safari";
@@ -192,9 +192,9 @@ function updateCurrentTime() {
 async function updateBatteryStatus() {
     if ('getBattery' in navigator) {
         let battery = await navigator.getBattery();
-        $('#userBat span').text((battery.level * 100 + '%' || 'NO DATA') + (battery.charging ? ' (charging)' : ''));
+        let batteryLevel = Math.round(battery.level * 100);
+        $('#userBat span').text((batteryLevel + '%' || 'NO DATA') + (battery.charging ? ' (charging)' : ''));
     } else {
         $('#userBat span').text('NO DATA');
     }
 }
-

@@ -107,6 +107,80 @@
             }
         }
     }
+    &__cascates{
+        position: absolute;
+        top: calc(50% + 70px);
+        right: 0;
+        transform: translateY(-50%);
+        display: flex;
+        animation: hideCascates .3s forwards 3.2s;
+        @media screen and (max-width: 991px){
+            top: calc(50% + 60px);
+        }
+
+        &:after{
+            height:5rem;
+            white-space: pre;
+            text-align:end;
+            color: #730505;
+            font-family: Oxanium;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            @media screen and (max-width: 575px){
+                font-size: 8px;
+            }
+            content:"";
+            animation: initText 2.4s ease  forwards;
+            @keyframes initText {
+                0% { content: "Booting up neural interface . . ." }
+                7% { content: "Booting up neural interface . . . \00000a Integrating cybernetic modules . . ." }
+                13% { content: "Booting up neural interface . . . \00000a Integrating cybernetic modules . . . \00000a Authenticating user bio-signature . . ." }
+                20% { content: "Booting up neural interface . . . \00000a Integrating cybernetic modules . . . \00000a Authenticating user bio-signature . . . \00000a Syncing neural pathways . . ." }
+                27% { content: "Booting up neural interface . . . \00000a Integrating cybernetic modules . . . \00000a Authenticating user bio-signature . . . \00000a Syncing neural pathways . . . \00000a Decoding encrypted data . . ." }
+                33% { content: "Integrating cybernetic modules . . . \00000a Authenticating user bio-signature . . . \00000a Syncing neural pathways . . . \00000a Decoding encrypted data . . . \00000a Initializing holo-display . . ." }
+                40% { content: "Authenticating user bio-signature . . . \00000a Syncing neural pathways . . . \00000a Decoding encrypted data . . . \00000a Initializing holo-display . . . \00000a Establishing secure comm-link . . ." }
+                47% { content: "Syncing neural pathways . . . \00000a Decoding encrypted data . . . \00000a Initializing holo-display . . . \00000a Establishing secure comm-link . . . \00000a Scanning for network threats . . ." }
+                53% { content: "Decoding encrypted data . . . \00000a Initializing holo-display . . . \00000a Establishing secure comm-link . . . \00000a Scanning for network threats . . . \00000a Configuring cyberware settings . . ." }
+                60% { content: "Initializing holo-display . . . \00000a Establishing secure comm-link . . . \00000a Scanning for network threats . . . \00000a Configuring cyberware settings . . . \00000a Powering up neural enhancements . . ." }
+                67% { content: "Establishing secure comm-link . . . \00000a Scanning for network threats . . . \00000a Configuring cyberware settings . . . \00000a Powering up neural enhancements . . . \00000a Loading virtual environment . . ." }
+                73% { content: "Scanning for network threats . . . \00000a Configuring cyberware settings . . . \00000a Powering up neural enhancements . . . \00000a Loading virtual environment . . . \00000a Running system diagnostics . . ." }
+                80% { content: "Configuring cyberware settings . . . \00000a Powering up neural enhancements . . . \00000a Loading virtual environment . . . \00000a Running system diagnostics . . . \00000a Synchronizing data streams . . ." }
+                87% { content: "Powering up neural enhancements . . . \00000a Loading virtual environment . . . \00000a Running system diagnostics . . . \00000a Synchronizing data streams . . . \00000a Finalizing protocols . . ." }
+                93% { content: "Loading virtual environment . . . \00000a Running system diagnostics . . . \00000a Synchronizing data streams . . . \00000a Finalizing protocols . . . \00000a Establishing neural uplink . . ." }
+                100% { content: "Running system diagnostics . . . \00000a Synchronizing data streams . . . \00000a Finalizing protocols . . . \00000a Establishing neural uplink . . . \00000a Launching interface . . ." }
+            }
+            
+        }
+    }
+    &__warning{
+        position: absolute;
+        top: calc(50% + 40px);
+        left: 0;
+        transform: translateY(-50%);
+        display: flex;
+        animation: hideCascates .3s forwards 3.2s;
+
+        color: #730505;
+        font-family: Oxanium;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        @media screen and (max-width: 991px){
+            top: calc(50% + 20px);
+            font-size: 8px;
+        }
+    }
+    @keyframes hideCascates{
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
     &--anim{
         .loadingBar__percent{
             opacity: 0;
