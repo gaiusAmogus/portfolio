@@ -1,12 +1,10 @@
 import { getSvg } from '../../functions/getSvg.js';
 import { handleBackButtons } from '../../functions/backButtons.js';
 
-
 export function headerFooter() { 
-    var app = $('#app');
+    var app = document.getElementById('app');
     
-    var header = 
-    `
+    var header = `
         <header class="header">
             <div class="header__row">
                 <div class="header__row__el header__row__el--1">
@@ -23,8 +21,7 @@ export function headerFooter() {
         </header>
     `;
 
-    var footer = 
-    `
+    var footer = `
         <footer class="footer">
             <div class="footer__row">
                 <div class="footer__row__el footer__row__el--1">
@@ -39,19 +36,21 @@ export function headerFooter() {
                 </div>
                 <div class="footer__row__el footer__row__el--2">
                     <p><span>If you want to offer me cooperation write to </span><a href="mailto:kontakt@voidnetrun.it" class="link link--red">kontakt@voidnetrun.it</a></p>
-                    <a href="/">${getSvg('linkedin')}</a>
-                    <a href="/">${getSvg('github')}</a>
+                    <a href="/" target="_blank">${getSvg('linkedin')}</a>
+                    <a href="https://github.com/gaiusAmogus" target="_blank">${getSvg('github')}</a>
                 </div>
             </div>
         </footer>
     `;
-    $(header).appendTo(app);
-    $(footer).appendTo(app);
 
-    var headerFooterSpace = $('.header').innerHeight() + $('.footer').innerHeight() + 80;
+    app.insertAdjacentHTML('beforeend', header);
+    app.insertAdjacentHTML('beforeend', footer);
+
+    var headerHeight = document.querySelector('.header').offsetHeight;
+    var footerHeight = document.querySelector('.footer').offsetHeight;
+    var headerFooterSpace = headerHeight + footerHeight + 80;
     
-    var contentContainer = 
-    `
+    var contentContainer = `
         <section class="contentContainer" data-about="0" style="max-height: calc(100% - ${headerFooterSpace}px)">
             <div class="container">
                 <div class="row">
@@ -62,7 +61,7 @@ export function headerFooter() {
             </div>
         </section>
     `;
-    $(contentContainer).appendTo(app);
+    app.insertAdjacentHTML('beforeend', contentContainer);
 
     updateUserInfo();
     handleBackButtons();
@@ -71,18 +70,33 @@ export function headerFooter() {
 async function updateUserInfo() {
     // Informacje o systemie i przeglądarce
     let browserInfo = getBrowserInfo();
-    $('#userSystem span').text(browserInfo.system + ' ' + browserInfo.systemVersion || 'NO DATA');
-    $('#userBrowser span').text((browserInfo.browser + ' ' + browserInfo.version) || 'NO DATA');
+    document.querySelector('#userSystem span').textContent = browserInfo.system + ' ' + browserInfo.systemVersion || 'NO DATA';
+    document.querySelector('#userBrowser span').textContent = (browserInfo.browser + ' ' + browserInfo.version) || 'NO DATA';
 
     // Adres IP i lokalizacja
     let ipAndLocation = await getIPAndLocation();
 
     if (ipAndLocation) {
-        $('#userIP span').text(ipAndLocation.ip || 'NO DATA');
-        $('#userLocation span').text((ipAndLocation.city || 'NO DATA') + ', ' + (ipAndLocation.country || 'NO DATA'));
+
+        const city = ipAndLocation.city || '';
+        const country = ipAndLocation.country || '';
+        
+        let displayText;
+        
+        if (city && country) {
+            displayText = `${city}, ${country}`;
+        } else if (city || country) {
+            displayText = city || country;
+        } else {
+            displayText = 'NO DATA';
+        }
+        
+        document.querySelector('#userLocation span').textContent = displayText;
+        document.querySelector('#userIP span').textContent = ipAndLocation.ip || 'NO DATA';
+        
     } else {
-        $('#userIP span').text('NO DATA');
-        $('#userLocation span').text('NO DATA');
+        document.querySelector('#userIP span').textContent = 'NO DATA';
+        document.querySelector('#userLocation span').textContent = 'NO DATA';
     }
 
     // Aktualizacja czasu użytkownika
@@ -162,39 +176,47 @@ function getBrowserInfo() {
 }
 
 async function getIPAndLocation() {
+    let ip = null;
+    let city = null;
+    let country = null;
+
     try {
         // Fetch the IP address
         let ipResponse = await fetch('https://api.ipify.org?format=json');
         if (!ipResponse.ok) throw new Error('Failed to fetch IP');
         let ipData = await ipResponse.json();
-        
+        ip = ipData.ip;
+
         // Fetch the location data based on the IP address
-        let locationResponse = await fetch(`http://ip-api.com/json/${ipData.ip}`);
+        let locationResponse = await fetch(`https://ipinfo.io/${ip}/json`);
         if (!locationResponse.ok) throw new Error('Failed to fetch location');
         let locationData = await locationResponse.json();
         
-        return {
-            ip: ipData.ip,
-            city: locationData.city,
-            country: locationData.country
-        };
+        city = locationData.city;
+        country = locationData.country;
+
     } catch (error) {
         console.error('Error fetching IP and location:', error);
-        return null;
     }
+
+    return {
+        ip: ip,
+        city: city,
+        country: country
+    };
 }
 
 function updateCurrentTime() {
     let now = new Date();
-    $('#userTime span').text(now.toLocaleDateString() + ' ' + now.toLocaleTimeString());
+    document.querySelector('#userTime span').textContent = now.toLocaleDateString() + ' ' + now.toLocaleTimeString();
 }
 
 async function updateBatteryStatus() {
     if ('getBattery' in navigator) {
         let battery = await navigator.getBattery();
         let batteryLevel = Math.round(battery.level * 100);
-        $('#userBat span').text((batteryLevel + '%' || 'NO DATA') + (battery.charging ? ' (charging)' : ''));
+        document.querySelector('#userBat span').textContent = (batteryLevel + '%' || 'NO DATA') + (battery.charging ? ' (charging)' : '');
     } else {
-        $('#userBat span').text('NO DATA');
+        document.querySelector('#userBat span').textContent = 'NO DATA';
     }
 }

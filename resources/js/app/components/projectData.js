@@ -1,10 +1,8 @@
 import { clearContent } from '../functions/clearContent.js';
-import { getSvg } from '../functions/getSvg.js';
-import { customScrollbar, scrollTop } from '../functions/customScrollbar.js';
+import { customScrollbar } from '../functions/customScrollbar.js';
 import { TextScramble, textType } from '../functions/textScramble.js';
 import { animFrom } from '../functions/animTransform.js';
 import { showBackButton, closeBackButton } from '../functions/backButtons.js';
-import { randomGlitch } from '../functions/randomGlitch.js';
 
 
 async function projectDataContent(dataId) {
@@ -25,14 +23,14 @@ async function projectDataContent(dataId) {
                 <h2 class="title title--1" data-text="${project.name}">${textType(project.name)}</h2>
                 ${project.link ? `<a class="btn btn--primary" href="${project.link}" target="_blank">Visit website</a>` : ''}
             </div>
-            <div class="col-12 col-lg-5 projectData__contentCol">
+            <div class="col-12 col-lg-4 projectData__contentCol">
                 <div class="projectData__content">
                     <div class="projectData__content__inner">
                         <p class="text text--1">${project.desc}</p>
                     </div>
                 </div> 
             </div>
-            <div class="col-12 col-lg-7 projectData__galleryCol">
+            <div class="col-12 col-lg-8 projectData__galleryCol">
                 <div class="projectData__gallery corners">
                     <div class="projectData__gallery__inner">
                         ${project.images.map(image => `<img class="projectData__gallery__inner__img" src="${window.location.href}/${image}" alt="Image">`).join('')}

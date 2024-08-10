@@ -2,213 +2,235 @@
     "projects": [
         {
             "id": 1,
-            "name": "Spacewar",
-            "title": "Lorem ipsum dolor sit amet, consectetur ",
-            "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
-            "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "assets/img/bin/portfolioTest.jpg",
+            "name": "Spacewar in space",
+            "title": "Spacewar in space",
+            "excerpt": "A simple browser 3D game using three.js, made as a college project by Dawid Jedynak.",
+            "desc": "A browser game made with the three.js engine and using free 3D models as a college project. The game works in such a way that the player's object consists of a ship model and a camera that are constantly moving forward. We use the keys to change the flight direction of this ship. Using the space bar, we fire a bullet, which is a cylinder that emits light for a fraction of a second when fired (for optimization purposes). We move around a map that is generated randomly each time (the arrangement of the planets is generated randomly every time we refresh the page). The skybox moves with the player to prevent them from flying out of it. There are also 15 enemies placed on the map who shoot at the player; for optimization purposes, they only turn towards the player when they shoot. The game counts the score of your opponents' hits. For optimization purposes, enemies are not deleted and new ones are generated, but teleported to a different position when hit. The game ends if we fly into a planet, an enemy, or our lives drop to zero.",
+            "thumb": "assets/img/sites/spacewar/1.jpg",
             "images": [
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg"
+                "assets/img/sites/spacewar/1.jpg",
+                "assets/img/sites/spacewar/2.jpg",
+                "assets/img/sites/spacewar/3.jpg",
+                "assets/img/sites/spacewar/4.jpg"
             ],
-            "link": "http://example.com/element1"
+            "link": "/"
         },
         {
             "id": 2,
-            "name": "Groch i proch",
-            "title": "Lorem ipsum dolor sit amet, consectetur ",
-            "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
-            "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "assets/img/bin/portfolioTest.jpg",
+            "name": "Groch i Proch",
+            "title": "Groch i Proch (still in proggres)",
+            "excerpt": "Artistic webside for a pirate metal band. Graphic design by Dawid Jedynak.",
+            "desc": "Website for the pirate metal band Groch i Proch. A very artistic website, we can come across animation at every step. Most of the animation is done using scrollTrigger for GSAP. The website is still under construction, in the future it will be expanded to include a blog, subpages with a gallery, descriptions of the band's songs and a store.",
+            "thumb": "assets/img/sites/grochiproch/1.jpg",
             "images": [
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg"
+                "assets/img/sites/grochiproch/1.jpg",
+                "assets/img/sites/grochiproch/2.jpg",
+                "assets/img/sites/grochiproch/3.jpg",
+                "assets/img/sites/grochiproch/4.jpg",
+                "assets/img/sites/grochiproch/5.jpg",
+                "assets/img/sites/grochiproch/6.jpg",
+                "assets/img/sites/grochiproch/7.jpg"
             ],
-            "link": "http://example.com/element1"
+            "link": "https://dev.grochiproch.pl"
         },
         {
             "id": 3,
-            "name": "Groch i proch",
-            "title": "Lorem ipsum dolor sit amet, consectetur ",
-            "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
-            "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "assets/img/bin/portfolioTest.jpg",
+            "name": "Prosperplast",
+            "title": "Prosperplast",
+            "excerpt": "Website and product catalog of one of the leading European producers of plastic products for home and garden. Graphic design by Funktional.",
+            "desc": "A huge website built using WordPress containing a catalog of Prosperplast products. The catalog is based on the WooCommerce engine, with purchasing functionalities disabled. In addition, the website has a lot of information pages about the company, a blog with guides, a blog with trade fairs, and product catalogs in .pdf format for download and many other interesting subpages. All sections operate using ACF.",
+            "thumb": "assets/img/sites/prosperplast/1.jpg",
             "images": [
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg"
+                "assets/img/sites/prosperplast/1.jpg",
+                "assets/img/sites/prosperplast/2.jpg",
+                "assets/img/sites/prosperplast/3.jpg",
+                "assets/img/sites/prosperplast/4.jpg",
+                "assets/img/sites/prosperplast/5.jpg",
+                "assets/img/sites/prosperplast/6.jpg"
             ],
-            "link": "http://example.com/element1"
+            "link": "https://www.prosperplast.pl"
         },
         {
             "id": 4,
-            "name": "Groch i proch",
-            "title": "Lorem ipsum dolor sit amet, consectetur ",
-            "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
-            "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "assets/img/bin/portfolioTest.jpg",
+            "name": "Gniazdo",
+            "title": "Gniazdo",
+            "excerpt": "A very artistic site where almost everything is animated. Graphic design by DotLineCode.",
+            "desc": "The artistic side of a tattoo studio. Made on WordPress, all content is editable using ACF or the built-in Gutenberg. Every movement on the website triggers some animation, most of them are based on GSAP. The website contains an interesting gallery, blog, descriptions of tattoo artists with their works and information about the studio.",
+            "thumb": "assets/img/sites/gniazdo/1.jpg",
             "images": [
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg"
+                "assets/img/sites/gniazdo/1.jpg",
+                "assets/img/sites/gniazdo/2.jpg",
+                "assets/img/sites/gniazdo/3.jpg",
+                "assets/img/sites/gniazdo/4.jpg"
             ],
-            "link": "http://example.com/element1"
+            "link": "https://pracowniagniazdo.pl"
         },
         {
             "id": 5,
-            "name": "Groch i proch",
-            "title": "Lorem ipsum dolor sit amet, consectetur ",
-            "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
-            "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "assets/img/bin/portfolioTest.jpg",
+            "name": "Hungry Eyes",
+            "title": "Hungry Eyes",
+            "excerpt": "A website with kitchen recipes in the form of a blog, a shop and courses. Graphic design by Funktional.",
+            "desc": "Website as a culinary blog, shop and cooking guide. First of all, the website contains CPT with culinary recipes, and their filtering using ACF fields using AJAX. In addition, the website had a store based on WooCommerce and sections with courses where you could buy and complete courses using LearnDash, but this is disabled at the moment. Currently, the owner has made some design changes, which means that some things on the website do not display as they should.",
+            "thumb": "assets/img/sites/hungryeyes/1.jpg",
             "images": [
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg"
+                "assets/img/sites/hungryeyes/1.jpg",
+                "assets/img/sites/hungryeyes/2.jpg",
+                "assets/img/sites/hungryeyes/3.jpg",
+                "assets/img/sites/hungryeyes/4.jpg",
+                "assets/img/sites/hungryeyes/5.jpg",
+                "assets/img/sites/hungryeyes/6.jpg",
+                "assets/img/sites/hungryeyes/7.jpg"
             ],
-            "link": "http://example.com/element1"
+            "link": "https://hungryeyes.pl"
         },
         {
             "id": 6,
-            "name": "Groch i proch",
-            "title": "Lorem ipsum dolor sit amet, consectetur ",
-            "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
-            "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "assets/img/bin/portfolioTest.jpg",
+            "name": "Pandruk",
+            "title": "Pandruk",
+            "excerpt": "A very simple, visually interesting website, with beautiful illustrations to present your business. Graphic design by Funktional.",
+            "desc": "Business website of a printing house built using WordPress. All sections are editable using ACF. We can find information about business, products and projects there. It was originally supposed to be integrated with Iwareprint, but their system did not allow building such a website structure.",
+            "thumb": "assets/img/sites/pandruk/1.jpg",
             "images": [
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg"
+                "assets/img/sites/pandruk/1.jpg",
+                "assets/img/sites/pandruk/2.jpg",
+                "assets/img/sites/pandruk/3.jpg",
+                "assets/img/sites/pandruk/4.jpg"
             ],
-            "link": "http://example.com/element1"
+            "link": "https://pandruk.pl"
         },
         {
             "id": 7,
-            "name": "Groch i proch",
-            "title": "Lorem ipsum dolor sit amet, consectetur ",
-            "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
-            "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "assets/img/bin/portfolioTest.jpg",
+            "name": "Accent for Professionals",
+            "title": "Accent for Professionals",
+            "excerpt": "Another simple and clear website for a language school with beautiful illustrations. Good example to present your business on the Internet. Graphic design by Funktional.",
+            "desc": "Simple business website based on WordPress, all sections are editable with ACF. A great example of how to present your business in a simple way.",
+            "thumb": "assets/img/sites/language_assessments/1.jpg",
             "images": [
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg"
+                "assets/img/sites/language_assessments/1.jpg",
+                "assets/img/sites/language_assessments/2.jpg",
+                "assets/img/sites/language_assessments/3.jpg",
+                "assets/img/sites/language_assessments/4.jpg"
             ],
-            "link": "http://example.com/element1"
+            "link": "https://assessments4professionals.com/?lang=en"
         },
         {
             "id": 8,
-            "name": "Groch i proch",
-            "title": "Lorem ipsum dolor sit amet, consectetur ",
-            "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
-            "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "assets/img/bin/portfolioTest.jpg",
+            "name": "Sinterit",
+            "title": "Sinterit",
+            "excerpt": "Website with products from a 3D printer manufacturer. Graphic design by DotLineCode.",
+            "desc": "Medium-sized website for a 3D printer manufacturer. WordPress-based site with editable content using ACF. The website has many CPTs in the form of blogs, filtered using AJAX. The website has a very interesting product set configurator, the elements of which are set by the customer in ACF, and are handled by JS on the front end. We can find it by entering the Products -> Build your set menu.",
+            "thumb": "assets/img/sites/sinterit/1.jpg",
             "images": [
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg"
+                "assets/img/sites/sinterit/1.jpg",
+                "assets/img/sites/sinterit/2.jpg",
+                "assets/img/sites/sinterit/3.jpg",
+                "assets/img/sites/sinterit/4.jpg"
             ],
-            "link": "http://example.com/element1"
+            "link": "https://sinterit.com/pl/"
         },
         {
             "id": 9,
-            "name": "Groch i proch",
-            "title": "Lorem ipsum dolor sit amet, consectetur ",
-            "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
-            "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "assets/img/bin/portfolioTest.jpg",
+            "name": "SWSM",
+            "title": "Śląska Wyższa Szkoła Medyczna w Katowicach",
+            "excerpt": "Quite a large website for universities, composed entirely of ACF Block, thanks to which the client arranges the content himself. Graphic design by DotLineCode.",
+            "desc": "Great website for universities. The website is built on WordPress using ACF blocks, the implementation of this project consisted (with the exception of CPT) of creating editable blocks, with various variants, from which the client arranged his website himself. This is the twin website of WSTI.",
+            "thumb": "assets/img/sites/swsm/1.jpg",
             "images": [
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg"
+                "assets/img/sites/swsm/1.jpg",
+                "assets/img/sites/swsm/2.jpg",
+                "assets/img/sites/swsm/3.jpg",
+                "assets/img/sites/swsm/4.jpg",
+                "assets/img/sites/swsm/5.jpg"
             ],
-            "link": "http://example.com/element1"
+            "link": "https://swsm.pl"
         },
         {
             "id": 10,
-            "name": "Groch i proch",
-            "title": "Lorem ipsum dolor sit amet, consectetur ",
-            "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
-            "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "assets/img/bin/portfolioTest.jpg",
+            "name": "WSTI",
+            "title": "Wyższa Szkoła Technologii Informatycznych w Katowicach",
+            "excerpt": "A twin website of SWSM, composed entirely of ACF Block, thanks to which the client arranges the content himself. Graphic design by DotLineCode.",
+            "desc": "Great website for universities. The website is built on WordPress using ACF blocks, the implementation of this project consisted (with the exception of CPT) of creating editable blocks, with various variants, from which the client arranged his website himself. This is the twin website of SWSM.",
+            "thumb": "assets/img/sites/wsti/1.jpg",
             "images": [
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg"
+                "assets/img/sites/wsti/1.jpg",
+                "assets/img/sites/wsti/2.jpg",
+                "assets/img/sites/wsti/3.jpg",
+                "assets/img/sites/wsti/4.jpg"
             ],
-            "link": "http://example.com/element1"
+            "link": "https://www.wsti.pl"
         },
         {
             "id": 11,
-            "name": "Groch i proch",
-            "title": "Lorem ipsum dolor sit amet, consectetur ",
-            "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
-            "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "assets/img/bin/portfolioTest.jpg",
+            "name": "DotLineCode",
+            "title": "DotLineCode",
+            "excerpt": "Another artistic website full of animations using three.js, gsap, etc. Graphic design by DotLineCode.",
+            "desc": "Website based on WordPress, with blog as portfolio elements. The entire website is made using ACF. The 3D model is animated using three.js and GSAP. It works in such a way that the model has a saved animation, and scrolling the page simply moves it in time, in the absence of movement, individual elements of the model make micro-movements to maintain fluidity, which after using the scroll move back to their position before stopping, and then continue there is animation. The 3D model also reflects with light.",
+            "thumb": "assets/img/sites/dotlinecode/1.jpg",
             "images": [
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg"
+                "assets/img/sites/dotlinecode/1.jpg",
+                "assets/img/sites/dotlinecode/2.jpg",
+                "assets/img/sites/dotlinecode/3.jpg",
+                "assets/img/sites/dotlinecode/4.jpg",
+                "assets/img/sites/dotlinecode/5.jpg"
             ],
-            "link": "http://example.com/element1"
+            "link": "https://dotlinecode.com"
         },
         {
             "id": 12,
-            "name": "Groch i proch",
-            "title": "Lorem ipsum dolor sit amet, consectetur ",
-            "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
-            "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "assets/img/bin/portfolioTest.jpg",
+            "name": "Hair Me Up",
+            "title": "Hair Me Up",
+            "excerpt": "Website and store for a hairdressing salon in Krakow. WordPress & WooCommerce. Graphic design by DotLineCode.",
+            "desc": "Website and hairdressing salon store. WordPress and WooCommerce. All website elements are based on ACF, the store has product filtering using REST API. Additionally, the plugin works with a voucher system for points that we earn by purchasing.",
+            "thumb": "assets/img/sites/hairmeup/1.jpg",
             "images": [
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg"
+                "assets/img/sites/hairmeup/1.jpg",
+                "assets/img/sites/hairmeup/2.jpg",
+                "assets/img/sites/hairmeup/3.jpg"
             ],
-            "link": "http://example.com/element1"
+            "link": "https://hairmeup.pl"
         },
         {
             "id": 13,
-            "name": "Groch i proch",
-            "title": "Lorem ipsum dolor sit amet, consectetur ",
-            "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
-            "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "assets/img/bin/portfolioTest.jpg",
+            "name": "El-in",
+            "title": "EL-IN",
+            "excerpt": "Website for a company belonging to the group of leaders operating in railway, power and building constructions. Graphic design by DotLineCode.",
+            "desc": "A simple WordPress website using ACF to present your business. It has classic subpages and 2 different CPTs in the form of implementation and local activities. There is an interesting timeline graph on the website made using GSAP scrollTrigger.",
+            "thumb": "assets/img/sites/el-in/1.jpg",
             "images": [
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg"
+                "assets/img/sites/el-in/1.jpg",
+                "assets/img/sites/el-in/2.jpg",
+                "assets/img/sites/el-in/3.jpg"
             ],
-            "link": "http://example.com/element1"
+            "link": "https://el-in.pl"
         },
         {
             "id": 14,
-            "name": "Groch i proch",
-            "title": "Lorem ipsum dolor sit amet, consectetur ",
-            "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
-            "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "assets/img/bin/portfolioTest.jpg",
+            "name": "Futureprint",
+            "title": "Futureprint",
+            "excerpt": "Business card website of a 3D printing company.",
+            "desc": "Simple business website based on WordPress, all sections are editable with ACF. A great example of how to present your business in a simple way.",
+            "thumb": "assets/img/sites/futureprint/1.jpg",
             "images": [
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg"
+                "assets/img/sites/futureprint/1.jpg",
+                "assets/img/sites/futureprint/2.jpg",
+                "assets/img/sites/futureprint/3.jpg"
             ],
-            "link": "http://example.com/element1"
+            "link": "https://futureprint.pl"
         },
         {
             "id": 15,
-            "name": "Groch i proch",
-            "title": "Lorem ipsum dolor sit amet, consectetur ",
-            "excerpt": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiu",
-            "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br><br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-            "thumb": "assets/img/bin/portfolioTest.jpg",
+            "name": "Kamil Stańczak",
+            "title": "Kamil Stańczak",
+            "excerpt": "The website and shop of the Polish painter.",
+            "desc": "A small website for the artist where he presents his works. The whole thing is made on WordPress, using ACF, we can read about the artist, browse an interesting gallery of works, and even buy some paintings in the store that runs on WooCommerce.",
+            "thumb": "assets/img/sites/kamilstanczak/1.jpg",
             "images": [
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg",
-                "assets/img/bin/portfolioTest.jpg"
+                "assets/img/sites/kamilstanczak/1.jpg",
+                "assets/img/sites/kamilstanczak/2.jpg",
+                "assets/img/sites/kamilstanczak/3.jpg",
+                "assets/img/sites/kamilstanczak/4.jpg"
             ],
-            "link": "http://example.com/element1"
+            "link": "https://kamilstanczak.art"
         }
     ]
 }

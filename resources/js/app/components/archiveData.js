@@ -28,7 +28,7 @@ async function archiveContentList() {
     // Generowanie całej zawartości HTML
     const content = `
         <section class="archiveData">
-            <h2 class="title title--1 textShadow--white" data-text="Project data of the object" style="opacity: 0">${textType('Project data of the object')}</h2>
+            <h2 class="title title--1 textShadow--white" data-text="Projects data" style="opacity: 0">${textType('Projects data')}</h2>
             <div class="archiveScreen" style="opacity: 0">
                 <div class="archiveScreen__inner corners">
                     <div class="archiveScreen__inner__el archiveScreen__inner__el--0 projectsList col-12 col-lg-4 col-xxl-3 offset-xxl-1">
@@ -38,7 +38,7 @@ async function archiveContentList() {
                             </div>
                         </div>
                     </div>
-                    <div class="archiveScreen__inner__el archiveScreen__inner__el--1 archiveProjectContainer col-12 col-lg-8  col-xxl-7 ">
+                    <div class="archiveScreen__inner__el archiveScreen__inner__el--1 archiveProjectContainer col-12 col-lg-8">
                         <!-- Place for additional content -->
                     </div>
                 </div>

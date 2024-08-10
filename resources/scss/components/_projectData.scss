@@ -68,8 +68,17 @@
         @media screen and (max-width: 991px){
             padding-bottom: 30px;
         }
+        &__inner{
+            .text{
+                text-align: justify;
+                @media screen and (min-width: 1400px){
+                    font-size: 25px;
+                }
+            }
+        }
         .os-content {
             padding: 0 0 0 40px;
+
         }
         .os-scrollbar{
             right: auto !important;

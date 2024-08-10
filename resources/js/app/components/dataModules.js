@@ -24,7 +24,7 @@ function dataModulesContent() {
                         <div class="dataModule__inner__leftbar"></div>
                         <div class="dataModule__inner__content">
                             ${getSvg('modulesIcon_1')}
-                            <h3 class="title title--3">Project data</h3>
+                            <h3 class="title title--3">Projects data</h3>
                         </div>
                     </div>
                 </div>

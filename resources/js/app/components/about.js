@@ -1,10 +1,9 @@
 import { clearContent } from '../functions/clearContent.js';
 import { getSvg } from '../functions/getSvg.js';
-import { customScrollbar, scrollTop } from '../functions/customScrollbar.js';
+import { customScrollbar } from '../functions/customScrollbar.js';
 import { TextScramble, textType } from '../functions/textScramble.js';
 import { animFrom } from '../functions/animTransform.js';
 import { showBackButton, closeBackButton } from '../functions/backButtons.js';
-import { randomGlitch } from '../functions/randomGlitch.js';
 
 function aboutContent() {
 
@@ -26,8 +25,8 @@ function aboutContent() {
     const descriptions = [
         { label: 'Object:', value: 'Dawid Jedynak' },
         { label: 'Age:', value: 'no data' },
-        { label: 'Height:', value: '171' },
-        { label: 'Location:', value: 'no data' }
+        { label: 'Location:', value: 'Somhere in poland' },
+        { label: 'Expierence:', value: '5 years' },
     ];
 
     let listEl = '';
@@ -45,7 +44,7 @@ function aboutContent() {
             <div class="row">
                 <div class="col-12 col-lg-4">
                     <div class="aboutData__prof">
-                        <img src="${window.location.href}/assets/img/bin/prof.jpg" alt="profilPicture">
+                        <img src="${window.location.href}/assets/img/prof.jpg" alt="profilPicture">
                     </div>
                 </div>
                 <div class="col-12 col-lg-5">
@@ -53,11 +52,10 @@ function aboutContent() {
                         <div class="aboutData__desc__list">${listEl}</div>
                         <div class="aboutData__desc__desc">
                             <p class="text text--2">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-                                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-                                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, 
-                                qui dolorem ipsum quia dolor sit amet, 
+                                Frontend developer with years of experience. Expert in making templates for
+                                Wordpress, and WooCoomerce. Eager and quick to learn new technologies.
+                                An always busy man with many passions. After work - guitarist, fencer,
+                                aspiring video game developer and horse rider.</br>
                             </p>
                         </div>
                     </div>
@@ -67,13 +65,105 @@ function aboutContent() {
                         <div class="aboutData__human__inner">${getSvg('human')}</div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 aboutData__brainCol">
                     <div class="aboutData__brain">
                         <div class="aboutData__brain__analyse corners">
                             <p>ANALYSIS IN PROGRESS...</p>
                         </div>
                         <div class="aboutData__brain__inner">${getSvg('brain')}</div>
                         ${allSkills}
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="aboutData__cv">
+                        <div class="aboutData__cv__part">
+                            <h3 class="aboutData__cv__part__title">Experience</h3>
+                            <div class="aboutData__cv__part__content">
+                                <div class="aboutData__cv__part__content__el">
+                                    <p class="text text--1">
+                                        [08.2022 - 08.2024]<br>
+                                        Frontend developer at DotLineCode
+                                    </p> 
+                                    <p class="text text--2"> 
+                                        Coding templates and creating plugins for WordPress and stores based on
+                                        WooCommerce, using ACF, REST API, design and implementation
+                                        systems dedicated to the client, creating animations using
+                                        three.js and GSAP, servicing, operation and optimization of websites.
+                                    </p>
+                                </div>
+                                <div class="aboutData__cv__part__content__el">
+                                    <p class="text text--1">
+                                        [02.2021 - 07.2022]<br>
+                                        Frontend developer at Funktional
+                                    </p> 
+                                    <p class="text text--2"> 
+                                        Coding templates for WordPress using ACF, stores based on WooCommerce, 
+                                        website servicing, operation and optimization.
+                                    </p>
+                                </div>
+                                <div class="aboutData__cv__part__content__el">
+                                    <p class="text text--1">
+                                        [09.2020 - 01.2021]<br>
+                                        Junior Frontend developer at Millenium Studio
+                                    </p> 
+                                    <p class="text text--2"> 
+                                        Modification of existing WordPress templates for the client using ACF, simple
+                                        stores based on WooCommerce and PrestaShop, servicing, service and
+                                        website optimization
+                                    </p>
+                                </div>
+                                <div class="aboutData__cv__part__content__el">
+                                    <p class="text text--1">
+                                        [09.2019 – 07.2020]<br>
+                                        Junior Frontend developer at CODESTICK
+                                    </p> 
+                                    <p class="text text--2"> 
+                                        Coding simple landing pages, simple online stores based on
+                                        WooCommerce, website maintenance
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="aboutData__cv__part">
+                            <h3 class="aboutData__cv__part__title">Education</h3>
+                            <div class="aboutData__cv__part__content">
+                                <div class="aboutData__cv__part__content__el">
+                                    <p class="text text--1">
+                                        [Computer Science Engineer]<br>
+                                    </p> 
+                                    <p class="text text--2">College of Business - National Louis University located in Nowy Sącz [02/2023 – Present]</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="aboutData__cv__part">
+                            <h3 class="aboutData__cv__part__title">Courses and qualifications</h3>
+                            <div class="aboutData__cv__part__content">
+                                <div class="aboutData__cv__part__content__el">
+                                    <p class="text text--1">98-364:MTA Database Fundamentals</p> 
+                                    <p class="text text--1">98-367:MTA Security Fundamentals</p> 
+                                    <p class="text text--1">98-361:MTA Software Development Fundamentals</p> 
+                                    <p class="text text--1">98-383:MTA Introduction to Programming using HTML and CSS</p> 
+                                    <p class="text text--1">Qualification E.12. Assembly and operation of personal computers and peripheral devices</p> 
+                                    <p class="text text--1">Qualification E.13. Designing local computer networks and network administration</p> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="aboutData__cv__part">
+                            <h3 class="aboutData__cv__part__title">Passions and interests</h3>
+                            <div class="aboutData__cv__part__content">
+                                <div class="aboutData__cv__part__content__el">
+                                    <p class="text text--1">Historical European Martial Arts</p> 
+                                    <p class="text text--1">Horse Riding</p> 
+                                    <p class="text text--1">Singing and playing guitar</p> 
+                                    <p class="text text--1">Video games</p> 
+                                    <p class="text text--1">History</p> 
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -97,7 +187,7 @@ export function runAbout(){
             setTimeout(() => {
                 if(window.innerWidth > 1199){
                     var aboutScreenHeight = document.querySelector('.contentContainer').clientHeight - 5;
-                    document.querySelector('.aboutData').style.maxHeight = aboutScreenHeight + 'px';
+                    document.querySelector('.aboutData').style.height = aboutScreenHeight + 'px';
                     customScrollbar('.aboutData');
                 }
                 aboutBtns();
