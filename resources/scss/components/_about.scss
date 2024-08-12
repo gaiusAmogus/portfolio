@@ -545,6 +545,9 @@
                 flex-direction: column;
                 gap: 10px;
                 padding-left: 30px;
+                @media screen and (max-width: 991px){
+                    padding-left: 10px;
+                }
                 .text--1{
                     font-weight: 600;
                 }

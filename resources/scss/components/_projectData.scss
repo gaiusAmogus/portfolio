@@ -7,6 +7,9 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 38px;
+        @media screen and (max-width: 991px){
+            padding: 0;
+        }
         @media screen and (max-width: 767px){
             flex-direction: column;
             gap: 15px;
@@ -23,11 +26,13 @@
     &__galleryCol{
         @media screen and (max-width: 991px){
             order: 1;
+            padding: 0;
         }
     }
     &__contentCol{
         @media screen and (max-width: 991px){
             order: 2;
+            padding: 0;
         }
     }
     &__gallery{
@@ -68,14 +73,7 @@
         @media screen and (max-width: 991px){
             padding-bottom: 30px;
         }
-        &__inner{
-            .text{
-                text-align: justify;
-                @media screen and (min-width: 1400px){
-                    font-size: 25px;
-                }
-            }
-        }
+
         .os-content {
             padding: 0 0 0 40px;
 

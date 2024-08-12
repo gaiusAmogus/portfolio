@@ -25,7 +25,7 @@ function aboutContent() {
     const descriptions = [
         { label: 'Object:', value: 'Dawid Jedynak' },
         { label: 'Age:', value: 'no data' },
-        { label: 'Location:', value: 'Somhere in poland' },
+        { label: 'Location:', value: 'Somehere in poland' },
         { label: 'Expierence:', value: '5 years' },
     ];
 
@@ -52,10 +52,12 @@ function aboutContent() {
                         <div class="aboutData__desc__list">${listEl}</div>
                         <div class="aboutData__desc__desc">
                             <p class="text text--2">
-                                Frontend developer with years of experience. Expert in making templates for
-                                Wordpress, and WooCoomerce. Eager and quick to learn new technologies.
-                                An always busy man with many passions. After work - guitarist, fencer,
-                                aspiring video game developer and horse rider.</br>
+                                Frontend developer with years of experience.
+                                Expert in making templates for Wordpress, and WooCoomerce. 
+                                Eager and quick to learn new technologies and techniques. 
+                                A busy man with many passions. 
+                                Hobbies include playing guitar, fencing, video game development and horseback riding.
+                                </br>
                             </p>
                         </div>
                     </div>
@@ -85,10 +87,9 @@ function aboutContent() {
                                         Frontend developer at DotLineCode
                                     </p> 
                                     <p class="text text--2"> 
-                                        Coding templates and creating plugins for WordPress and stores based on
-                                        WooCommerce, using ACF, REST API, design and implementation
-                                        systems dedicated to the client, creating animations using
-                                        three.js and GSAP, servicing, operation and optimization of websites.
+                                        Coding templates and creating plugins for WordPress and stores based on WooCommerce.
+                                        Using ACF, REST API, design and implementation systems dedicated to the client. 
+                                        Creating animations using three.js and GSAP, servicing, operation and optimization of websites.
                                     </p>
                                 </div>
                                 <div class="aboutData__cv__part__content__el">
@@ -97,8 +98,9 @@ function aboutContent() {
                                         Frontend developer at Funktional
                                     </p> 
                                     <p class="text text--2"> 
-                                        Coding templates for WordPress using ACF, stores based on WooCommerce, 
-                                        website servicing, operation and optimization.
+                                        Coding templates for WordPress using ACF.
+                                        Creation of stores based on WooCommerce. 
+                                        Website servicing, operation and optimization.
                                     </p>
                                 </div>
                                 <div class="aboutData__cv__part__content__el">
@@ -107,9 +109,9 @@ function aboutContent() {
                                         Junior Frontend developer at Millenium Studio
                                     </p> 
                                     <p class="text text--2"> 
-                                        Modification of existing WordPress templates for the client using ACF, simple
-                                        stores based on WooCommerce and PrestaShop, servicing, service and
-                                        website optimization
+                                        Modification of existing WordPress templates for the client using ACF.
+                                        Simple stores based on WooCommerce and PrestaShop.
+                                        Servicing, operation and website optimization.
                                     </p>
                                 </div>
                                 <div class="aboutData__cv__part__content__el">
@@ -118,8 +120,9 @@ function aboutContent() {
                                         Junior Frontend developer at CODESTICK
                                     </p> 
                                     <p class="text text--2"> 
-                                        Coding simple landing pages, simple online stores based on
-                                        WooCommerce, website maintenance
+                                        Coding simple landing pages.
+                                        Simple online stores based on WooCommerce.
+                                        Website maintenance.
                                     </p>
                                 </div>
                             </div>

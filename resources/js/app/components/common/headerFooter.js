@@ -36,7 +36,7 @@ export function headerFooter() {
                 </div>
                 <div class="footer__row__el footer__row__el--2">
                     <p><span>If you want to offer me cooperation write to </span><a href="mailto:kontakt@voidnetrun.it" class="link link--red">kontakt@voidnetrun.it</a></p>
-                    <a href="/" target="_blank">${getSvg('linkedin')}</a>
+                    <a href="https://www.linkedin.com/in/dawid-jedynak-4b9991322/" target="_blank">${getSvg('linkedin')}</a>
                     <a href="https://github.com/gaiusAmogus" target="_blank">${getSvg('github')}</a>
                 </div>
             </div>
