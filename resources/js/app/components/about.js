@@ -8,13 +8,13 @@ import { showBackButton, closeBackButton } from '../functions/backButtons.js';
 function aboutContent() {
 
     const skills = [
-        { title: 'Javascript', lvl: 4 },
+        { title: 'Javascript', lvl: 3 },
         { title: 'HTML/CSS/SASS', lvl: 5 },
         { title: 'React', lvl: 1 },
-        { title: 'UI', lvl: 2 },
-        { title: 'PHP', lvl: 4 },
-        { title: 'WooCommerce', lvl: 5 },
-        { title: 'WordPress', lvl: 5 }
+        { title: 'UI', lvl: 1 },
+        { title: 'PHP', lvl: 3 },
+        { title: 'WooCommerce', lvl: 3 },
+        { title: 'WordPress', lvl: 3 }
     ];
     
     let allSkills = '';
@@ -227,11 +227,11 @@ export function runAbout(){
 
 function getSkill(title, lvl, index) {
     const levels = {
-        1: 'BEGINNER',
-        2: 'INTERMEDIATE',
-        3: 'ADVANCED',
-        4: 'PROFICIENT',
-        5: 'EXPERT'
+        1: 'JUNIOR',
+        2: 'JUNIOR/MID',
+        3: 'MID',
+        4: 'MID/SENIOR',
+        5: 'SENIOR'
     };
     const pointers = {
         0: `<svg xmlns="http://www.w3.org/2000/svg" width="189" height="33" viewBox="0 0 189 33" fill="none">
@@ -264,9 +264,9 @@ function getSkill(title, lvl, index) {
         <div class="aboutData__brain__skillBar aboutData__brain__skillBar--${index}">
             <div class="aboutData__brain__skillBar__inner">
                 <div class="aboutData__brain__skillBar__inner__bg">${getSvg('skillBar')}</div>
-                <div class="aboutData__brain__skillBar__inner__title">${title}</div>
-                <div class="aboutData__brain__skillBar__inner__lines aboutData__brain__skillBar__inner__lines--${lvl}">${getSvg('lines')}</div>
-                <div class="aboutData__brain__skillBar__inner__lvl">LEVEL: ${levelText}</div>
+                <div class="aboutData__brain__skillBar__inner__title">${title}</div>`+
+                // <div class="aboutData__brain__skillBar__inner__lines aboutData__brain__skillBar__inner__lines--${lvl}">${getSvg('lines')}</div>
+                `<div class="aboutData__brain__skillBar__inner__lvl">LEVEL: ${levelText}</div>
             </div>
             <div class="aboutData__brain__skillBar__pointer">${pointer}</div>
         </div>
